@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6852131a22a735b4b9e55d03a16e1a35
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - foundSound: {instanceID: 0}
+  - errorSound: {instanceID: 0}
+  - history: {instanceID: 0}
+  - database: {instanceID: 0}
+  - inp: {instanceID: 0}
+  - output: {instanceID: 0}
+  - progression: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
