@@ -415,7 +415,7 @@ MonoBehaviour:
     altOutput: 
     entryType: 0
   - name: ultimate reality
-    output: '<ignore>I see thee</ignore>
+    output: '<b><ignore>I see thee</ignore>
 
 
       in thine putrescent flesh.
@@ -429,11 +429,6 @@ MonoBehaviour:
     progressionLevel: 2
     altOutput: 
     entryType: 2
-  - name: order
-    output: uh idk cuh <sprite=8><sprite=3><sprite=12> lmao
-    progressionLevel: 1
-    altOutput: 
-    entryType: 0
   - name: angel
     output: "<mspace=0.15em><size=10>                                                                         
       .:+.                      \n                                 .                                     
@@ -1090,19 +1085,12 @@ MonoBehaviour:
     progressionLevel: 1
     altOutput: 
     entryType: 0
-  - name: test
-    output: 'so this would be underlined if bookmarked
-
-
-      <u color=#FFEB04>test'
-    progressionLevel: 1
-    altOutput: 
-    entryType: 0
   - name: cognisance
     output: Jesus said to them, 'I am the bread of life; whoever comes to me shall
       not hunger, and whoever believes in me shall never thirst.
     progressionLevel: 2
-    altOutput: <font="Pigpen Cipher"> hello
+    altOutput: <font="pigpen SDF">Jesus said to them, 'I am the bread of life; whoever
+      comes to me shall not hunger, and whoever believes in me shall never thirst.
     entryType: 0
   - name: light of the world
     output: "                                                                                                   
@@ -1176,6 +1164,43 @@ MonoBehaviour:
       \r\n                        ...                                              
       ....                      \r\n                                                                                                   
       \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                    "
+    progressionLevel: 1
+    altOutput: 
+    entryType: 0
+  - name: bread of life
+    output: "                                                                                                   
+      \r<indent=28%><size=7><mspace=0.45em>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              
+      .:=+*##*****##%#*+-.                :+%@@@@@@@%-                -*%@@@@@@*=         
+      \r\n            .=#@@%+-.        .=#@@@%+:.               -#@@@@@@%=.                
+      -@@@*.            \r\n          :*@@@%=.             .:*@@@@%=.              
+      +@@@@@@@+.                 -@+              \r\n        :*@@@@*.                
+      .-%@@@@%-.             :@@@@@@@@+.                 %-              \r\n     
+      .=%@@@@=                     :#@@@@@*.            :@-@@@@@@@*:               
+      %:              \r\n     .=@@@@@=.                      :#@@@@@%.          
+      :@.:%@@@@@@*:               %:              \r\n     -%@@@@#.                       
+      -%@@@@@*           :@ .:%@@@@@@#:.             %:              \r\n    :#@@@@@-.                        
+      +@@@@@@=          :@   :#@@@@@@%:             %:              \r\n   .=@@@@@#:                         
+      .%@@@@@%.         :@    :*@@@@@@@-            %:              \r\n   .*@@@@@+.                          
+      *@@@@@@=         :@     .+@@@@@@@=           %:              \r\n   :%@@@@@=.                          
+      -%@@@@@*         :@      .+@@@@@@@+          %:              \r\n   :@@@@@@-                           
+      :%@@@@@*         :@       .=%@@@@@@*.        %:              \r\n   :@@@@@@=.                          
+      .%@@@@@#         :@         =%@@@@@@#.       %:              \r\n   :%@@@@@+.                          
+      .%@@@@@*         :@          -%@@@@@@#:      %:              \r\n   :%@@@@@*:                          
+      :%@@@@@+         :@           :%@@@@@@%-     %:              \r\n   .*@@@@@%:                          
+      -%@@@@@-         :@            .#@@@@@@%-    %:              \r\n    -@@@@@@+.                         
+      *@@@@@#          :@              *@@@@@@%-.  %:              \r\n    .*@@@@@@:.                       
+      :%@@@@@-          :@              .+@@@@@@@=. %:              \r\n     :*@@@@@#.                       
+      *@@@@@=           :@               .=@@@@@@@+.%:              \r\n      :#@@@@@*                      
+      =@@@@@=            :@                .-@@@@@@@*@:              \r\n       :*@@@@@#.                  
+      .=@@@@%:             :@                 .-%@@@@@@@:              \r\n        
+      -#@@@@%-                 :*@@@@+.              -@.                  :#@@@@@@:             
+      \r\n           -*@@@@#-            .:*@@@%=.               .#@*.                 
+      :#@@@@@:              \r\n             .-*#@@%*=:.. .::=*%@%*=:              
+      .:=%@@@%=:.                :#@@@@:              \r\n                  .-==+++**+==-:.                  
+      -+++++++++-                 .=+++.              \r\n                                                                                                   
       \r\n                                                                                                   
       \r\n                                                                                                   
       \r\n                                                                                                    "
