@@ -16,16 +16,17 @@ MonoBehaviour:
   - name: password, passwords
     output: "Some entries are blocked behind a password and are either<color=red>
       REDACTED</color> or blocked out <color=red> \uFFFD\uFFFD\uFFFD\uFFFD</color>
-      like so.\n\nTo enter a deeper layer, find and enter any unique password into
-      the console. \n\n<b>passwords are always one unique word with no numbers and
-      may only be used once.</b>\n\n<color=green>Current Layer: {bios.progression.progressionLevel}"
+      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD\n\nTo
+      enter a deeper layer, find and enter any unique password into the console.
+      \n\n<b>passwords are always one unique word with no numbers and may only be
+      used once.</b>\n\n<color=green>Current Layer: {bios.progression.progressionLevel}"
     progressionLevel: 1
     altOutput: "Some entries are blocked behind a password and are either<color=red>
       REDACTED</color> or blocked out <color=red> \uFFFD\uFFFD\uFFFD\uFFFD</color>
-      like so.\n\nTo increase your security clearence, find and enter any unique
-      password into the console. \n\n<b>passwords are always one unique word with
-      no numbers and may only be used once.</b>\n\n<color=green>Current security
-      clearence level: {bios.progression.progressionLevel}"
+      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD\n\nTo
+      increase your security clearence, find and enter any unique password into the
+      console. \n\n<b>passwords are always one unique word with no numbers and may
+      only be used once.</b>\n\n<color=green>Current security clearence level: {bios.progression.progressionLevel}"
     entryType: 0
   - name: 1+1
     output: 2! obviously :)
@@ -154,6 +155,36 @@ MonoBehaviour:
 
       through its own
       fault, sees only the horizon
+
+      of misery that stretches on forever.
+
+      But
+      you, who are in mortal sin, may  hope
+
+      to rise again; there is a time
+      for all,
+
+      when mercy meets the soul with such compassion
+
+      that
+      it is granted solace from its pain.
+
+
+
+      Woe to you, depraved ones!  Nevermore
+
+      Behold
+      the light, for I come to bear you
+
+      To endless night in fire and ice.'
+    progressionLevel: 0
+    altOutput: 
+    entryType: 0
+  - name: nevermore
+    output: '<color=black>The darkened soul, whose vision is so stunted,
+
+      through
+      its own fault, sees only the horizon
 
       of misery that stretches on forever.
 
