@@ -1,24 +1,36 @@
 using UnityEngine;
+
 public class TestCrash : MonoBehaviour
 {
-    private bool isCrashed = false;
-    public bool IsCrashed => isCrashed;
+    private bool shouldCrash = false;
+    public bool IsCrashed => shouldCrash;
+    public Saving saving;
     void Start()
     {
-        AudioListener.pause = true;
+        saving.Save();
+        Time.timeScale = 0f;
         TriggerGlitch();
-        TriggerCrash();
+        Invoke("TriggerCrash", 5f);
     }
+
     void Update()
     {
-        if (isCrashed)
+        if (shouldCrash)
         {
+            // Trigger an infinite loop to crash the game
             while (true)
             {
-
+                // Deliberate no-op to create an infinite loop
             }
         }
     }
+
+    void TriggerCrash()
+    {
+        Debug.LogError("InfernOS is crashing intentionally...");
+        shouldCrash = true;
+    }
+
     void TriggerGlitch()
     {
         var cameraEffect = Camera.main.GetComponent<ScreenShearEffect>();
@@ -26,11 +38,9 @@ public class TestCrash : MonoBehaviour
         {
             cameraEffect.StartShearing(0.2f, 1000f);
         }
-    }
-    void TriggerCrash()
-    {
-        Debug.LogError("InfernOS is crashing intentionally...");
-        isCrashed = true;
+
+        // Pause all audio globally
+        AudioListener.volume = 0f;
     }
 }
-
+    

@@ -115,7 +115,7 @@ public class SystemMessageBox : MonoBehaviour
                 MessageBoxW(IntPtr.Zero, "Please check " + desktopPath + " for more information.", uniqueTitle, MB_OK | MB_ICONINFORMATION);
             }).Start();
 
-            Thread.Sleep(THREAD_SLEEP_MS);
+            Thread.Sleep(70);
         }
     }
 
