@@ -16,17 +16,19 @@ MonoBehaviour:
   - name: password, passwords
     output: "Some entries are blocked behind a password and are either<color=red>
       REDACTED</color> or blocked out <color=red> \uFFFD\uFFFD\uFFFD\uFFFD</color>
-      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD\n\nTo
+      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD.\n\nTo
       enter a deeper layer, find and enter any unique password into the console.
       \n\n<b>passwords are always one unique word with no numbers and may only be
-      used once.</b>\n\n<color=green>Current Layer: {bios.progression.progressionLevel}"
+      used once. \nIf included, they will be parsed regardless of other text.</b>\n\n<color=green>Current
+      Layer: {bios.progression.progressionLevel}"
     progressionLevel: 1
     altOutput: "Some entries are blocked behind a password and are either<color=red>
       REDACTED</color> or blocked out <color=red> \uFFFD\uFFFD\uFFFD\uFFFD</color>
-      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD\n\nTo
+      like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD.\n\nTo
       increase your security clearence, find and enter any unique password into the
       console. \n\n<b>passwords are always one unique word with no numbers and may
-      only be used once.</b>\n\n<color=green>Current security clearence level: {bios.progression.progressionLevel}"
+      only be used once. \nIf included, they will be parsed regardless of other text.</b>\n\n<color=green>Current
+      security clearence level: {bios.progression.progressionLevel}"
     entryType: 0
   - name: 1+1
     output: 2! obviously :)
@@ -59,17 +61,18 @@ MonoBehaviour:
     entryType: 0
   - name: entries, entry
     output: 'InfernOS uses a database of entries to fetch answers, with all entry
-      names being automatically highlighted.
+      names being automatically highlighted. All valid entries are saved in the system
+      history.
 
 
-      <b>all valid entries are highlighted
-      in <color=yellow>yellow</color>.</b>
+      <b>all valid entries are highlighted in <color=yellow>yellow</color>.</b>
 
 
-      Use *ask + the name of an entry
-      to search the database.
+      Use
+      *ask + the name of an entry to search the database.
 
-      <color=green>e.g *ask where am i?</color>'
+      <color=green>e.g
+      *ask where am i?</color>'
     progressionLevel: 0
     altOutput: 
     entryType: 0
@@ -138,18 +141,6 @@ MonoBehaviour:
     progressionLevel: 1
     altOutput: 
     entryType: 2
-  - name: woe
-    output: "<color=#000000FF>The darkened soul, whose vision is so stunted,\r\nthrough
-      its own fault, sees only the horizon\r\nof misery that stretches on forever.\r\n</color>\u2610<color=black>ut
-      you, who are in mortal sin, may hope\r\nto ris</color>\u2610<color=black></color>\u2610<color=black>gain;</color>\u2610<color=black>here
-      is a time for all,\r\nwhenme</color>\u2610<color=black>cy meets the soul </color> 
-      \u2610<color=black>th s</color>\u2610<color=black>ompassion\r\nthat it is granted
-      solac</color>\u2610<color=black> from its pain.\r\n\r</color>\n\nWoe<color=black>to
-      you, depraved ones!! Nevermore\nBehold the light, for I come to bear you\nTo
-      endless night in fire and ice."
-    progressionLevel: 0
-    altOutput: 
-    entryType: 0
   - name: hope
     output: 'The darkened soul, whose vision is so stunted,
 
@@ -180,33 +171,31 @@ MonoBehaviour:
     progressionLevel: 0
     altOutput: 
     entryType: 0
-  - name: nevermore
-    output: '<color=black>The darkened soul, whose vision is so stunted,
-
-      through
-      its own fault, sees only the horizon
-
-      of misery that stretches on forever.
-
-      But
-      you, who are in mortal sin, may  hope
-
-      to rise again; there is a time
-      for all,
-
-      when mercy meets the soul with such compassion
-
-      that
-      it is granted solace from its pain.
-
-
-
-      Woe to you, depraved ones!  Nevermore
-
-      Behold
-      the light, for I come to bear you
-
-      To endless night in fire and ice.'
+  - name: woe
+    output: "----------------------------------------------------\n-------------------------------------------------\n-----------------------------------------\n\u2610---------------------------------------<space=0.615em>
+      hope\n------\u2610\u2610----- \u2610----------------------\n----------\u2610----------------------\u2610----
+      \u2610---------------\n------------------------- \u2610--------------\n\n\nWoe
+      ------------------------------------------\n---------------------------------------------\t\n----------------------------------"
+    progressionLevel: 0
+    altOutput: 
+    entryType: 0
+  - name: butt meat
+    output: "<color=#000000FF>The darkened soul, whose vision is so stunted,\r\nthrough
+      its own fault, sees only the horizon\r\nof misery that stretches on forever.\r\n</color>\u2610<color=black>ut
+      you, who are in mortal sin, may hope\r\nto ris</color>\u2610<color=black></color>\u2610<color=black>gain;</color>\u2610<color=black>here
+      is a time for all,\r\nwhenme</color>\u2610<color=black>cy meets the soul </color> 
+      \u2610<color=black>th s</color>\u2610<color=black>ompassion\r\nthat it is granted
+      solac</color>\u2610<color=black> from its pain.\r\n\r</color>\n\nWoe<color=black>to
+      you, depraved ones!! Nevermore\nBehold the light, for I come to bear you\nTo
+      endless night in fire and ice."
+    progressionLevel: 0
+    altOutput: 
+    entryType: 0
+  - name: butt meat 2
+    output: "----------------------------------------------------\n-------------------------------------------------\n-----------------------------------------\n\u2610---------------------------------------<space=0.615em>
+      hope\n------\u2610\u2610----- \u2610----------------------\n----------\u2610----------------------\u2610----
+      \u2610---------------\n------------------------- \u2610--------------\n\n\nWoe
+      ---------------------------   Nevermore\n---------------------------------------------\t\n----------------------------------"
     progressionLevel: 0
     altOutput: 
     entryType: 0
@@ -394,6 +383,19 @@ MonoBehaviour:
     progressionLevel: 0
     altOutput: 
     entryType: 0
+  - name: prophet
+    output: 'One who speaks of Prophecies.
+
+
+      Many figures are heralded with
+      such power, cloaked with lies.
+
+
+      <b>Do not trust anyone claiming to be
+      a prophet.'
+    progressionLevel: 1
+    altOutput: 
+    entryType: 0
   - name: order
     output: "<align=center> Ascension </align>\n\t\t\t\t/                   I                 
       \\\n          Cognisance \t\t   ----------\t         \t         Sagacity\n\t\t\t\t\\                  
@@ -417,19 +419,6 @@ MonoBehaviour:
       I                  \\\n           Surrender\t\t             ----------\t                  
       Victory\n\t\t\t\t\\                                      /\n<align=center>Foundation\n\n|\n\nDivine
       Power"
-    entryType: 0
-  - name: prophet
-    output: 'One who speaks of Prophecies.
-
-
-      Many figures are heralded with
-      such power, cloaked with lies.
-
-
-      <b>Do not trust anyone claiming to be
-      a prophet.'
-    progressionLevel: 1
-    altOutput: 
     entryType: 0
   - name: prophecy, prophecies
     output: "Rows and rows,\nand teeth in rows. \nOutstretched arms, \nand wings
@@ -489,7 +478,8 @@ MonoBehaviour:
       \n          ..##*.+#..*-#*-++-###%%#+%=*+@%+%%*###*-=+-*::+#%%###*++=+#-.=#*#*:*#@-.:=-.......        
       \n          .#*#+#=*.*+.#++*:-#%*##%@+#*--=+**#@*....#-*#%#*#%##*++-::=++**#**:%#@*....:::            
       \n        ..##=#*@=%*-*+#*###%#%#*%%**==**=+.=%#*-=*#####+***+*****#-..-*#*#**=%#*=-=*+...           
-      </mspace></size>uphold the order.<mspace=0.15em><size=10>\n        .*@++@:*::%:#*##*%#*#%+***=+==.-.=#+%##%%****+--+*+*++++*+-=*+##+*---.--:-:-#-..           
+      </mspace></size><pos=60%>uphold the order.<mspace=0.15em><size=10>\n       
+      .*@++@:*::%:#*##*%#*#%+***=+==.-.=#+%##%%****+--+*+*++++*+-=*+##+*---.--:-:-#-..           
       \n      ..*:-+.#.-+.%#*##+=#:=#%*=*-.=*#+:%=..###@#+::==:-%=++%@@+-**#*-%#=+-=+++#::++*#..           
       \n      .#..*.:#.-%=#+%%%%=##%#%%#%%%%@:......##***%@#+..-*+**+*=.=+:#:-%#+*=+*.#=-+*:#*+.           
       \n    ..*:.#..++.##*-%*%%%###%#####*++#*###%*+=##*+@@@#+.:+*#*#*.:#%+*+*#+#-*.:#-#=#+++*#:           
@@ -1238,3 +1228,15 @@ MonoBehaviour:
     progressionLevel: 1
     altOutput: 
     entryType: 0
+  - name: system history
+    output: "InfernOS has an in-built *history function. \n\n<b>The history automatically
+      saves the last 10 valid entries that you have inputted. </b>\n\nYou can use
+      *back to "
+    progressionLevel: 1
+    altOutput: 
+    entryType: 0
+  - name: the truth
+    output: 
+    progressionLevel: 1
+    altOutput: 
+    entryType: 1
