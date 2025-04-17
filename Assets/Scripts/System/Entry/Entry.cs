@@ -17,6 +17,7 @@ public class Entry
     [TextArea(3, 10)]
     public string altOutput;
     public type entryType;
+    public float slowTypeSpeed;
 
     public enum type
     {

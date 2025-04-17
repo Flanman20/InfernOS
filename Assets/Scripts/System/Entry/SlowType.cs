@@ -7,12 +7,12 @@ public class SlowType
     {
         monoBehaviour.StopAllCoroutines();
     }
-    public void TypeLine(string message, float speed, TMP_Text output, MonoBehaviour monoBehaviour, Database database)
+    public void TypeLine(string message, float speed, TMP_Text output, MonoBehaviour monoBehaviour, Database database, bool Randomize = false)
     {
         monoBehaviour.StopAllCoroutines();
-        monoBehaviour.StartCoroutine(LinePrint(message, speed, output, database));
+        monoBehaviour.StartCoroutine(LinePrint(message, speed, output, database, Randomize));
     }
-    public static IEnumerator LinePrint(string message, float speed, TMP_Text output, Database database)
+    public static IEnumerator LinePrint(string message, float speed, TMP_Text output, Database database, bool Randomize)
     {
         bool insideParenthesis = false;
         string typedText = string.Empty; // Holds the visible text as it is typed.
@@ -36,7 +36,17 @@ public class SlowType
             output.text = highlightedText;
             if (!insideParenthesis)
             {
-                yield return new WaitForSeconds(speed);
+                
+                if (Randomize)
+                {
+                    float newSpeed = 0;
+                    newSpeed= speed*(1 + Random.Range(-0.05f, 0.05f));
+                    yield return new WaitForSeconds(newSpeed);
+                }
+                else {
+                    yield return new WaitForSeconds(speed);
+                }
+                
             }
         }
     }

@@ -182,7 +182,7 @@ public class BIOS : MonoBehaviour
                     {
                         case Entry.type.Normal: output.text = highlightedEntry; break;
                         case Entry.type.Corrupted: output.text = highlightedEntry; break;
-                        case Entry.type.SlowType: slowType.TypeLine(highlightedEntry, UnityEngine.Random.Range(0.1f, 0.3f), output, this, database); break;
+                        case Entry.type.SlowType: slowType.TypeLine(highlightedEntry, entry.slowTypeSpeed, output, this, database, true); break;
                     }
                     return;
                 }
