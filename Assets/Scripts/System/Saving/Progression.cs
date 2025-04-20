@@ -14,6 +14,7 @@ public class Progression : MonoBehaviour
     // Data we want to save
     public int progressionLevel = 0;
     public bool seenHell = false;
+    public bool seenDisruption = false;
     public bool timeUpdated = false;
     private bool found = false;
 
@@ -23,6 +24,7 @@ public class Progression : MonoBehaviour
         var data = new ProgressionData();
         data.progressionLevel = this.progressionLevel;
         data.seenHell = this.seenHell;
+        data.seenDisruption = this.seenDisruption;
         data.timeUpdated = this.timeUpdated;
         return data;
     }

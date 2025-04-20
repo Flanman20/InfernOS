@@ -53,6 +53,23 @@ public class EntryPropertyDrawer : PropertyDrawer
 
             propertyRect.y += propertyRect.height + EditorGUIUtility.standardVerticalSpacing;
 
+            // **Here is where we draw the minProgressionLevel**
+            SerializedProperty minProgressionLevelProp = property.FindPropertyRelative("minProgressionLevel");
+            propertyRect.height = EditorGUIUtility.singleLineHeight;  // Match the height to progressionLevel
+            EditorGUI.LabelField(new Rect(propertyRect.x, propertyRect.y, propertyRect.width, propertyRect.height),
+                new GUIContent("Min Progression Level"));
+
+            EditorGUI.BeginChangeCheck();
+            int newMinValue = EditorGUI.IntField(
+                new Rect(propertyRect.x + propertyRect.width - valueWidth - rightMargin, propertyRect.y, valueWidth, propertyRect.height),
+                minProgressionLevelProp.intValue);
+            if (EditorGUI.EndChangeCheck())
+            {
+                minProgressionLevelProp.intValue = newMinValue;
+            }
+
+            propertyRect.y += propertyRect.height + EditorGUIUtility.standardVerticalSpacing;
+
             SerializedProperty altOutputProp = property.FindPropertyRelative("altOutput");
             propertyRect.height = EditorGUI.GetPropertyHeight(altOutputProp);
             EditorGUI.PropertyField(propertyRect, altOutputProp);
@@ -90,6 +107,8 @@ public class EntryPropertyDrawer : PropertyDrawer
         EditorGUI.EndProperty();
     }
 
+
+
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
         float totalHeight = EditorGUIUtility.singleLineHeight;
@@ -99,6 +118,7 @@ public class EntryPropertyDrawer : PropertyDrawer
             SerializedProperty nameProp = property.FindPropertyRelative("name");
             SerializedProperty outputProp = property.FindPropertyRelative("output");
             SerializedProperty progressionLevelProp = property.FindPropertyRelative("progressionLevel");
+            SerializedProperty minProgressionLevelProp = property.FindPropertyRelative("minProgressionLevel");
             SerializedProperty altOutputProp = property.FindPropertyRelative("altOutput");
             SerializedProperty entryTypeProp = property.FindPropertyRelative("entryType");
             SerializedProperty slowTypeSpeedProp = property.FindPropertyRelative("slowTypeSpeed");
@@ -106,6 +126,7 @@ public class EntryPropertyDrawer : PropertyDrawer
             totalHeight += EditorGUI.GetPropertyHeight(nameProp) + EditorGUIUtility.standardVerticalSpacing;
             totalHeight += EditorGUI.GetPropertyHeight(outputProp) + EditorGUIUtility.standardVerticalSpacing;
             totalHeight += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing; // progressionLevel
+            totalHeight += EditorGUI.GetPropertyHeight(minProgressionLevelProp) + EditorGUIUtility.standardVerticalSpacing; // minProgressionLevel
             totalHeight += EditorGUI.GetPropertyHeight(altOutputProp) + EditorGUIUtility.standardVerticalSpacing;
             totalHeight += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing; // entryType
 
@@ -117,4 +138,5 @@ public class EntryPropertyDrawer : PropertyDrawer
 
         return totalHeight;
     }
+
 }

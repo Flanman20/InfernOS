@@ -13,6 +13,7 @@ public class Entry
     public string output;  
     
     public int progressionLevel;
+    public int minProgressionLevel = 0; 
 
     [TextArea(3, 10)]
     public string altOutput;

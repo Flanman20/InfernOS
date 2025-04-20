@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
 
     public void HandleAudio(Entry entry)
     {
-        if (entry.progressionLevel > progression.progressionLevel && entry.altOutput == string.Empty)
+        if (entry.progressionLevel > progression.progressionLevel && (entry.altOutput == string.Empty || entry.minProgressionLevel > progression.progressionLevel))
         {
             PlaySound(errorSound);
         }
@@ -36,7 +36,6 @@ public class AudioManager : MonoBehaviour
         if (clip != null)
         {
             float fxVolume = audioSource.volume; // Get the current FX AudioSource volume
-            Debug.Log($"fxvolume:{fxVolume}");
             audioSource.PlayOneShot(clip, fxVolume); // Use the volume as a multiplier
         }
         else
@@ -45,9 +44,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeIn(AudioSource source, float speed)
+    public IEnumerator FadeIn(AudioSource source, float speed, float targetVolume)
     {
-        float targetVolume = ambientVolume; // Fade up to player-set ambient volume
         source.volume = 0f; // Ensure it starts from zero
 
         while (source.volume < targetVolume)

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 
@@ -20,19 +21,41 @@ public class EdgeCases : MonoBehaviour
 
         if (input.Contains("hell") && progression.seenHell == false && !input.Contains("hello") && progression.progressionLevel == 0)  
         {
+            AudioListener.volume = 0f;
+            Time.timeScale = 0f;
+            Thread.Sleep(1500);
+            Time.timeScale = 1f;
+            AudioListener.volume = 1f;
+
             progression.seenHell = true;
             bios.audioManager.backgroundSource.Stop();
             Debug.Log("should stop now");
-            StartCoroutine(Wait(5f));
+            StartCoroutine(WaitSound(5f));
+        }
+
+        if (input.Contains("serverdisruption") && !progression.seenDisruption) 
+        {
+            Debug.Log("goat shit here");
+            var cameraEffect = Camera.main.GetComponent<ScreenShearEffect>();
+            if (cameraEffect != null)
+            {
+                cameraEffect.StartShearing(0.5f, 0.13f);
+                AudioListener.volume = 0f;
+                
+                Thread.Sleep(100);
+                AudioListener.volume = 1f;
+            }
+            progression.seenDisruption = true;
         }
     }   
     //real shit code but idk ill just kms or smth
-    IEnumerator Wait(float seconds)
+    IEnumerator WaitSound(float seconds)
     {
         yield return new WaitForSeconds(seconds);
+        float maxVol = bios.audioManager.backgroundSource.volume;
         bios.audioManager.backgroundSource.volume = 0;
         bios.audioManager.backgroundSource.Play();
-        StartCoroutine(bios.audioManager.FadeIn(bios.audioManager.backgroundSource, 0.001f));
-        StopCoroutine(Wait(seconds));
+        StartCoroutine(bios.audioManager.FadeIn(bios.audioManager.backgroundSource, 0.001f, maxVol));
+        StopCoroutine(WaitSound(seconds));
     }
 }

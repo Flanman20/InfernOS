@@ -59,7 +59,9 @@ public class BIOS : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             Back();      
+
         inp.ActivateInputField();
+
         if (Input.GetKeyDown(KeyCode.Return) && inp.IsActive())
         {
             if (!inp.text.StartsWith("*settings"))
@@ -160,9 +162,16 @@ public class BIOS : MonoBehaviour
                         }
                         else
                         {
-                            if (string.IsNullOrEmpty(entry.altOutput))
+                            if (string.IsNullOrEmpty(entry.altOutput) || entry.minProgressionLevel > progression.progressionLevel)
                             {
-                                output.text = $"<color=red><ENTRY REDACTED></color><br><color=#FF000088>Protection level: {entry.progressionLevel}</color><br><br><color=green>Please type a <color=yellow>password</color> to increase security clearence.</color>";
+                                if (progression.progressionLevel < entry.minProgressionLevel)
+                                {
+                                    output.text = $"<color=red><ENTRY REDACTED></color><br><color=#FF000088>Protection level: {entry.minProgressionLevel}</color><br><br><color=green>Please type a <color=yellow>password</color> to increase security clearence.</color>";
+                                }
+                                else
+                                {
+                                    output.text = $"<color=red><ENTRY REDACTED></color><br><color=#FF000088>Protection level: {entry.progressionLevel}</color><br><br><color=green>Please type a <color=yellow>password</color> to increase security clearence.</color>";
+                                }
                                 return;
                             }
                             else
