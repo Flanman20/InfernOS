@@ -23,7 +23,7 @@ public class BIOS : MonoBehaviour
     int backIndex = 1;
     private bool skipHistoryAdd = false;
     private int currentHistoryIndex = -1;
-    Entry currentEntry;
+    public Entry currentEntry;
     private void Awake()
     {
         settings.SetActive(true);
@@ -342,6 +342,4 @@ public class BIOS : MonoBehaviour
             return;
         }
     }
-
-
 }

@@ -22,6 +22,7 @@ MonoBehaviour:
       used once. \nIf included, they will be parsed regardless of other text.</b>\n\n<color=green>Current
       Layer: {bios.progression.progressionLevel}"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: "Some entries are blocked behind a password and are either<color=red>
       REDACTED</color> or blocked out <color=red> \uFFFD\uFFFD\uFFFD\uFFFD</color>
       like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD.\n\nTo
@@ -34,24 +35,28 @@ MonoBehaviour:
   - name: 1+1
     output: 2! obviously :)
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: hello
     output: Hello World! I am InfernOS
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: whats up
     output: What's up! I'm InfernOS!
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: where am i, what is this
     output: You are in the Main Cortex.
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -62,6 +67,7 @@ MonoBehaviour:
       text entries to quickly fetch and return. \n\n<b>Try it out! do<color=green>
       *ask entries </color>or <color=green>*ask system info</color> to find out more!"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -80,6 +86,7 @@ MonoBehaviour:
       <color=green>e.g
       *ask where am i?</color>'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -90,12 +97,14 @@ MonoBehaviour:
       use the *ask command in the console
       to fetch entries from the database and return the data.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: yellow
     output: Yes, even this entry is marked in <color=yellow>yellow</color>.
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -109,6 +118,7 @@ MonoBehaviour:
       information contact our email: <u>tech.mison@aol.com</u>\n\nOr visit our website:
       <u>misontech.github.io/site</u>"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -116,6 +126,7 @@ MonoBehaviour:
     output: And I saw when the Lamb opened one of the seals, and I heard, as it were
       the noise of thunder, one of the four beasts saying, Come and see.
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -123,6 +134,7 @@ MonoBehaviour:
     output: "It is as high as heaven; \nwhat canst thou do?\n\ndeeper than hell;
       \nwhat canst thou know?"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -151,6 +163,7 @@ MonoBehaviour:
 
       <b>All hope abandon ye who enter here.'
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 2
     slowTypeSpeed: 0
@@ -182,6 +195,7 @@ MonoBehaviour:
 
       To endless night in fire and ice.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -191,28 +205,7 @@ MonoBehaviour:
       \u2610---------------\n------------------------- \u2610--------------\n\n\nWoe
       ------------------------------------------\n---------------------------------------------\t\n----------------------------------"
     progressionLevel: 0
-    altOutput: 
-    entryType: 0
-    slowTypeSpeed: 0
-  - name: butt meat
-    output: "<color=#000000FF>The darkened soul, whose vision is so stunted,\r\nthrough
-      its own fault, sees only the horizon\r\nof misery that stretches on forever.\r\n</color>\u2610<color=black>ut
-      you, who are in mortal sin, may hope\r\nto ris</color>\u2610<color=black></color>\u2610<color=black>gain;</color>\u2610<color=black>here
-      is a time for all,\r\nwhenme</color>\u2610<color=black>cy meets the soul </color> 
-      \u2610<color=black>th s</color>\u2610<color=black>ompassion\r\nthat it is granted
-      solac</color>\u2610<color=black> from its pain.\r\n\r</color>\n\nWoe<color=black>to
-      you, depraved ones!! Nevermore\nBehold the light, for I come to bear you\nTo
-      endless night in fire and ice."
-    progressionLevel: 0
-    altOutput: 
-    entryType: 0
-    slowTypeSpeed: 0
-  - name: butt meat 2
-    output: "----------------------------------------------------\n-------------------------------------------------\n-----------------------------------------\n\u2610---------------------------------------<space=0.615em>
-      hope\n------\u2610\u2610----- \u2610----------------------\n----------\u2610----------------------\u2610----
-      \u2610---------------\n------------------------- \u2610--------------\n\n\nWoe
-      ---------------------------   Nevermore\n---------------------------------------------\t\n----------------------------------"
-    progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -223,6 +216,7 @@ MonoBehaviour:
       Comes in many forms such as: Angel, Prophet,
       God.'
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -231,6 +225,7 @@ MonoBehaviour:
       comes in the form of entries. \n\nAlthough usually seperate, data can be connected
       by referencing one another."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -239,6 +234,7 @@ MonoBehaviour:
       is completely automated through MISON servers, allowing complete ease of use
       for the user. "
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -249,6 +245,7 @@ MonoBehaviour:
       all instances of the same program, allowing for our products to share collective
       data. \n\n<b>For data collection, this program may access your network."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -258,6 +255,7 @@ MonoBehaviour:
       several recent adjustments. \n\n<b>Make sure to look out for more upcoming
       patches and updates!"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -269,6 +267,7 @@ MonoBehaviour:
       Please
       check our page for more information on upcoming updates.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -278,6 +277,7 @@ MonoBehaviour:
       complaints of file corruption \n- Increased synchronization rate to limit desynch
       events during <color=black>-</color> peak activity\n\n"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -285,6 +285,7 @@ MonoBehaviour:
     output: "<b>Hebrews 10:32</b>\n\nBut recall the former days when,\nafter you
       were enlightened, \nyou endured a hard struggle with sufferings."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -297,6 +298,7 @@ MonoBehaviour:
       Reminder that all uploaded files must adhere to naming conventions outlined
       in \nSection 4.3. \n\n<b>Contact IT Support for assistance if necessary.  "
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -317,6 +319,7 @@ MonoBehaviour:
 
       <b>"Without vision, the people perish."'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -325,6 +328,7 @@ MonoBehaviour:
       alone. Here at MISON, every innovation falls not in the footstep of one, but
       in the strides of us all.
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -333,6 +337,7 @@ MonoBehaviour:
       believes in the church shall not perish but have eternal life.\n\n\u2014 John
       3:16"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -345,6 +350,7 @@ MonoBehaviour:
       For as long as we
       may, we will always delve deeper.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -359,6 +365,7 @@ MonoBehaviour:
       still in development, we aspire that you can recognize the true potential in
       the depths of this program."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -377,6 +384,7 @@ MonoBehaviour:
       This decentralized structure enhances system resilience, as each instance maintains
       operational integrity even in the event of server disruption.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -388,6 +396,7 @@ MonoBehaviour:
       NULL_DEREF@0x2A | CORE:core .8042.zst DISCREPANCY IN MEMORY POINTER AT [00
       00 00 00 00 00 1F FF] (FLAG 290_LIMITTER)"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -398,6 +407,7 @@ MonoBehaviour:
       and low end computers, specifically from the Pentium 4 CPU. \n\n<b>This issue
       has been resolved for now."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -408,6 +418,7 @@ MonoBehaviour:
       <b>Warning: Synch rates affect latency.To
       minimize desynch, see our Synch Rate Guide.'
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -416,6 +427,7 @@ MonoBehaviour:
       Applications\n- Reduce Signal Noise\n- Optimize Input Patterns\n- Maintain
       Consistent Interaction\n\n<b>Good Luck!"
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -430,21 +442,22 @@ MonoBehaviour:
       <b>Do not trust anyone claiming to be
       a prophet.'
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: order
-    output: "<align=center> Ascension </align>\n\t\t\t\t/                   I                 
-      \\\n          Cognisance \t\t   ----------\t         \t         Sagacity\n\t\t\t\t\\                  
+    output: "<align=center> Salvation </align>\n\n\t\t\t\t/                   I                 
+      \\\n          Salvation \t\t             ----------\t         \t         Salvation\n\t\t\t\t\\                  
       I                  /\n                    |                               
-      Erudition                           |  \n\t\t\t\t/                   I                 
-      \\\n           Strength\t\t             ----------\t                   Kindness\n\t\t\t\t\\                  
+      Salvation                           |  \n\t\t\t\t/                   I                 
+      \\\n           Salvation\t\t             ----------\t                   Salvation\n\t\t\t\t\\                  
       I                  /\n                    |                               
-      Harmony                           |                                \n\t\t\t\t/                  
-      I                  \\\n           Surrender\t\t             ----------\t                  
-      Victory\n\t\t\t\t\\                                      /\n<align=center>Foundation\n\n|\n\nDivine
-      Power"
+      Salvation                           |                                \n\t\t\t\t/                  
+      I                  \\\n           Salvation\t\t             ----------\t                  
+      Salvation\n\t\t\t\t\\                                      /\n<align=center>Salvation\n\n|\n\nSalvation"
     progressionLevel: 2
+    minProgressionLevel: 1
     altOutput: "<align=center> \u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610
       </align>\n\n\t\t\t\t/                   |                  \\\n          Cognisance
       \t\t   ----------\t         \t         Sagacity\n\t\t\t\t\\                  
@@ -463,14 +476,16 @@ MonoBehaviour:
       afloat. \nOur shackles clink, \nyour order holds, \nlay waste to our graves,
       \nin rows and rows."
     progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: god
-    output: "<size=70>God <size=30>\u02C8g\xE4d\n\r</size></size><b>\n1  God : the
-      supreme or ultimate reality\n\n2  God : a being or object that is worshipped
-      as having more than natural attributes and powers"
+    output: "<size=70>God <size=30>\u02C8g\xE4d\n\r</size></size><b>\n1  God : a
+      being or object that is worshipped as having more than natural attributes and
+      powers\n\n2  God : the supreme or ultimate reality\n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -487,6 +502,7 @@ MonoBehaviour:
 
       I shall bless thine egress'
     progressionLevel: 2
+    minProgressionLevel: 0
     altOutput: 
     entryType: 2
     slowTypeSpeed: 0
@@ -549,6 +565,7 @@ MonoBehaviour:
       \n                                                                  ..                               
       \n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -577,6 +594,7 @@ MonoBehaviour:
 
       <pos=20%> The Son   --------------------   The Spirit'
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -593,6 +611,7 @@ MonoBehaviour:
       the saying that is written will come true: 'Death has been swallowed up in
       victory.\"\n\n'Where, O death, is your victory?\nWhere, O death, is your sting?'"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -608,6 +627,7 @@ MonoBehaviour:
       true: 'Death has been swallowed up in victory.\"\n\n'Where, O death, is your
       victory?\nWhere, O death, is your sting?'\n\n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -638,6 +658,7 @@ MonoBehaviour:
       lamb. Forgo thine flesh, O sacrificial lamb. Forgo thine flesh, O sacrificial
       lamb.
     progressionLevel: 2
+    minProgressionLevel: 1
     altOutput: <font="Wingding"><size=25>Forgo thine flesh, O sacrificial lamb. Forgo
       thine flesh, O sacrificial lamb. Forgo thine flesh, O sacrificial lamb. Forgo
       thine flesh, O sacrificial lamb. Forgo thine flesh, O sacrificial lamb. Forgo
@@ -764,6 +785,7 @@ MonoBehaviour:
       88888P   T888P  88  `88     88      <color=yellow>88    88    
       8b 88  `88 88  T888P  88</color>'
     progressionLevel: 2
+    minProgressionLevel: 0
     altOutput: 
     entryType: 2
     slowTypeSpeed: 0
@@ -777,6 +799,7 @@ MonoBehaviour:
       .#@@#     \r\n       .*@@%.     \r\n      .+@@@-.     \r\n     .=@@@*.     
       \r\n    .+@@@@#.      \r\n.-=*@@@@@@@%*=-:. \r\n:===============. \r\n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -790,6 +813,7 @@ MonoBehaviour:
       .\r\n                  \r\n                  \r\n                  \r\n                 
       \r\n                  \r\n               .:-\r\n               .==\r\n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -802,30 +826,40 @@ MonoBehaviour:
       \r\n@@@@@%:          \r\n@@@@@@*.         \r\n@@@@@@@=         \r\n=@@@@@@@:       
       \r\n.*@@@@@@%:       \r\n -@@@@@@@%:      \r\n.-@@@@@@@@%-.    \r\n*@@@@@@@@@@@%+=:.\r\n================-\r\n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: strength
-    output: 'Wkh Orug lv pb <color=yellow>vwuhqjwk</color> dqg pb vklhog.
+    output: '<color=red>Wkh Orug lv pb <color=yellow>vwuhqjwk</color> dqg pb vklhog.</color>
 
+
+      But
+      when the goodness and loving kindness appeared.
+
+      <color=red>
 
       Eohvvhg
       duh wkh <color=yellow>phuflixo</color>, iru wkhb zloo eh vkrzq phfub.'
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: kindness
     output: 'The Lord is my strength and my shield.
 
+      <color=red>
 
-      Blessed are the merciful,
-      for they will be shown mercy.'
-    progressionLevel: 2
-    altOutput: "The Lord is my strength and my shield.\n<color=red>\n<size=25>\u2610\u2610\u2610\u2610\u2610\u2610\u2610
-      \u2610\u2610\u2610 \u2610\u2610\u2610 <color=yellow>\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610</color>,
-      \u2610\u2610\u2610 \u2610\u2610\u2610\u2610 \u2610\u2610\u2610\u2610 \u2610\u2610
-      \u2610\u2610\u2610\u2610\u2610 \u2610\u2610\u2610\u2610\u2610.</color>"
+      Exw
+      zkhq wkh jrrgqhvv dqg orylqj<color=yellow> nlqgqhvv </color>dsshduhg.
+
+
+      Eohvvhg
+      duh wkh <color=yellow>phuflixo</color>, iru wkhb zloo eh vkrzq phfub.'
+    progressionLevel: 1
+    minProgressionLevel: 0
+    altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: yield
@@ -854,6 +888,7 @@ MonoBehaviour:
       \r\n                             ...-=====:... ..          .. ..:-=====-...                            
       \r\n                                                            ..                                      "
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -953,6 +988,7 @@ MonoBehaviour:
       \n                                                                                                                                                                                       
       \n"
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -961,6 +997,7 @@ MonoBehaviour:
 
 '
     progressionLevel: 2
+    minProgressionLevel: 0
     altOutput: '25 15 21 1 18 5 20 8 5 <color=yellow>12 9 7 8 20 15 6 20 8 5 23 15
       18 12 4</color>.
 
@@ -1081,85 +1118,474 @@ MonoBehaviour:
       \r\n                                                                                                                                                                                       
       \r\n                                                                                                                                                                                        "
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
   - name: sagacity
-    output: "<indent=5%><size=7><mspace=0.5em>                                                                                                                           
-      ..            .=@@@@#.                \r\n                                                                                                                           
-      :@*.         .%@# .@#          .-@*.  \r\n                                                                                                                             
-      =@+         *@@@#:.         :%#.    \r\n                                                                                     
-      ..                                       .+@:       ..:@@@%.      .%@.     
-      \r\n                                                                                    
-      +@@:                                        .#@:    .@%::%@%.    .*@:       
-      \r\n                   ..              ..                                       
-      ...              ...                                  .#%.  .-+#*=:.   .+@-         
-      \r\n                  .@:              :@                                       
-      .@:              .@.                                    .@%.         .-@=           
-      \r\n         :#%%.    .@:  :%##%%%+.   :@     .=#@@%*.                 .##%%:   
-      .@:  -%###:%##*. .@.   -###%-                  -=-----=-  :@*.     .-@*.:=-==.-===. 
-      \r\n         @@@@*.   .@:   :@@=.*@@.  :@    -@@=.:@@.                  .@@+    
-      .@:   =@@..%@=.  .@.    *@@.                   #@=#@@-@#    =@+   :%#.  .+@@..:@@.. 
-      \r\n       .*@==@@.   .@:   :@@+-@@:   :@   .@@@.                       .@@=    
-      .@:   =@@=@%     .@.    *@@.                   =-.*@%.=-      +@-%%.     =@@.
-      .@@    \r\n       :@@@@@@+   .@:   :@@=-#@@:  :@   .@@@.  :-.                 
-      .@@-     .@:   =@@=@@-.   .@.    *@%. =*.                  *@%.        .*@@:     
-      =@@. .@@    \r\n      .%@-  *@@.  .@:   :@@-.=@@:  :@    =@@#.-@@.                 
-      .@@-     .@:   *@@.=@@+.  .@.    *@@.:@@.                  *@#.      .+@- .#%.   
-      =@@. :@%    \r\n      +###-+####. .@:  -####%#+    :@     .+#%#*-                  
-      :@@.     .@:  =###*.:%%*. .@.   =######+.                :@@@@@:   .-@+    
-      :%%.   +@@@@*.    \r\n                  .@:              :@                             
-      :@+.      .@:              .@.                                    .-@*.       
-      :@*.            \r\n  .-===============@+==============+@===============-        
-      -===============@+===============@===============-                    :@#.:@@@@=%@@@:
-      -@+           \r\n                  .@:              :@                                       
-      .@:              .@.                                 .%%.   :@@+  %@-    +@-.       
-      \r\n                  .@:          .   :@           .                           
-      .@:              .@.      ..                       .#@:      *@% -@*      .*@-      
-      \r\n      =@@@@@@@+.  .@:  .%@@@@@@@.  :@    -@@@@@@@.              =@@@# 
-      -@@@+ .@: :@@@@:.%@@@: .@.   .@@@@@@=.                  +@:        -@@.%@:        
-      %@.     \r\n       -@@: :@@#. .@:   .@@* .*+   :@     :@@:.++.              
-      =@@@-.@@@+  .@:  .@@@@-.@@-  .@.  :@@-  =@@=                =@=           #@@@=          
-      :%%.   \r\n       -@@. .@@@. .@:   .@@@@@#    :@     :@@@@%                
-      *@*@%+@-@*  .@:  .@@+@@+@@:  .@.  +@@:  :@@*              .%+.            -*=-.            
-      :.   \r\n       -@@. :@@+  .@:   .@@+ .:+.  :@     :@@.                  .@@.%@@=.@# 
-      .@:  .@@.:@@@@:  .@.  -@@-  :@@-                                                    
-      \r\n      :#@@*#@@=.  .@:  .+@@%*%@@.  :@    :#@@*=                .=@@==@%.+@@+
-      .@:  +@@+::@@@:  .@.   +@@#*@@-.                                                    
-      \r\n      .......     .@:  .........   :@    ......                .............
-      .@: ...... .:..  .@.     .:..                                 .@@%.                 
-      \r\n  .-==============+@+==============+@================         ===============+@+==============+@+===============                     
-      .  ....:..... .             \r\n   ................@:..............:@................        
-      ................@:...............@................           .*=.       +@@@=-@@@*:+@@+.      
-      ..   \r\n         =%@@@%.  .@: .#%@@=-%%@@: :@     .%%@@+                 .%%%@@@*.  
-      .@:    .%@@%:.   .@.  :@%@@@%-.                .+@-      .*@%..%@@- -@%.     
-      .%%..  \r\n      .+@@-.-@@.  .@:  .@@*  -@@.  :@       @@+                   
-      %@#.=@@-  .@:  .@@#.:@@@:  .@.   :@@-.%@@.                 .#@:.    .@@--@@@*.#@.    
-      .*@-     \r\n      :@@=  ....  .@:  .@@#==#@@.  :@       @@=                   
-      %@* :@@-  .@:  *@@:  -@@+  .@.   :@@:.%@#.                   .%%.   .#@*#@.@@=@*   
-      .+@=.      \r\n      -@@+ *@@@.  .@:  .@@+..=@@.  :@       @@=                   
-      %@@@@%.   .@:  #@@:  :@@=  .@.   :@@@@@:                       .@#.  :@@@+
-      #@@@.   -@+.        \r\n      .#@@=.=@%.  .@:  .@@=  =@@.  :@      .@@=                   
-      %@*       .@:  :@@#..%@#.  .@.   -@@:-@@=.                       -@*. ..  
-      ..    -@*.          \r\n       .:+@@%*-.  .@: .####--####. :@     .%###=                
-      .%###*      .@:   .-%@@@.    .@.  -%##%.:@@#.                       .=@+.       
-      .@#.            \r\n                  .@:              :@                                       
-      .@:       .#@@@@@.@.                          -@@@@#=@@@+ .*@-.    .%@. =@@@@:%@@@. 
-      \r\n                  .@:              :@                                       
-      .@:          :+-..@.                            *@@--@#.    .*@: .*@-    .@@#.+@+   
-      \r\n                                                                                                                             
-      =@@@=.       .%@@-.      .@@%@+     \r\n                                                                                                                            
-      :@@@@%.      .=@+%#.       .@@*      \r\n                                                                                                                          
-      .#@%..@@@-.   -@*.  -@*.    ..@@*.     \r\n                                                                                                                          
-      :---::----: .@#.     .-@=.  :-----     \r\n                                                                                                                                    
-      .%%...........+@-.           \r\n                                                                                                                                  
-      .*@:  :@@@%@@@=  .*@:          \r\n                                                                                                                                
-      .*@-    -@-.%@@:     .%@.        \r\n                                                                                                                              
-      .=@=.       .%@%.        .%#.      \r\n                                                                                                                             
-      -@*.        :@@*..@+        :@*.    \r\n                                                                                                                          
-      ..@#.         =@@@%@@@-          =@+.  \r\n                                                                                                                           
-      -.                                    \r\n                                                                                                                                                                  "
+    output: " <size=7>                                                                                                                                                                                                                                                                                                                                 
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                             @                                            
+      @@                                                                                                                                                                                                                                     
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @                                                                                           
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @                                           @@                                              
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @                                           #@                                              
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @:                                           @                                              
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @*                                           @                                              
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @@                                           @                                              
+      \r\n                                             @                                            
+      @@                                                                                                                                        
+      @@                                           @                                              
+      \r\n                                             @                  @@@@@@                    
+      @@                    +@@@@@@@                                                                                                            
+      @@                                           @                                              
+      \r\n                      @@                     @                  @@@@@@@@@                 
+      @%                  @@@@@   @@                                                                                     
+      @@@                    @@                                           @                                              
+      \r\n                     *@@                     @                  @@@   #@@                 
+      @%                .@@@                                                                                             
+      %@@                    @@                 @@@   @@@                 @                 
+      .@@                          \r\n                     @@@@                   
+      @                  @@@   @@@                  @%                @@@                                                                                              
+      *@@                    @@                 +@@  @@@                  @                  
+      @@                          \r\n                    @@@@@@                  
+      @                  @@@@@@@@                   @+               -@@                                                                                               
+      =@@                    @@                 :@@ @@@                   @                  
+      @@                          \r\n                    @@ +@@                  
+      @                  @@@@@@@@@                  @*               .@@.                                                                                              
+      =@@                    =@                 .@@@@@                    @.                 
+      @@                          \r\n                   @@@  @@@                 
+      @                  @@%    @@@                 @-                @@@                                                                                              
+      .@@                    =@                 .@@@@@                    @*                 
+      @@                          \r\n                  @@@@@@@@@@                
+      @                  @@%    @@@                 @*                 @@@.                                                                                             
+      @@                     @                  @@ @@@                   @@                 
+      @@                          \r\n                 %@@%    @@@                
+      @                  @@@@@@@@@                  @:                  @@@@@@@@@@@                                                                                   
+      @@@@                     @                  @@  @@@                  @@                 
+      @@.                         \r\n                 @@@      @@@               
+      @                  @@@@@@                     @=                     -@@@@+                                                                                    
+      @@@                       @                  @@   =@@#                @@                 
+      @@                          \r\n                 @@.                        
+      @                                             @.                                                                                                                                         
+      @                  @@.   *@@                @@                  @@@@@@@                    
+      \r\n                                             @                                            
+      @.                                                                                                                                         
+      @                                           =@                                             
+      \r\n                                             @                                            
+      @                                                                                                                                          
+      @                                            @                                             
+      \r\n                                             @                                            
+      @                                                                                                                                  
+      @@@@@   @                     .@@@                   @                                             
+      \r\n                                             @                                            
+      @                                                                                                                                  
+      -@@@=   @                     @@@@@                  @    -@@@@                                    
+      \r\n                                             @                                            
+      @                                                                                                                                          
+      @                       :                    @     @@@@                                    
+      \r\n                                             @                                            
+      @                                                                                                                                          
+      @                                            @                                             
+      \r\n                           :*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+                          
+      @                                              \r\n @@@@@@@@@@@@@@@@@@@@@@@@@:                 
+      @                                             @                                                                                                                                          
+      @                   .:*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%-.        
+      \r\n                                            .@                                            
+      @                                                                                                                                          
+      @                                            @                                        
+      .=   \r\n                                            -@                                            
+      @                                                                                                                                          
+      @                                            @#                                            
+      \r\n                                            =@                                            
+      @                                                                                                                                          
+      @.                                           @@                                            
+      \r\n                                            +@                                            
+      @                                                                                                                                          
+      @.                                           @@                                            
+      \r\n                                            *@                                            
+      @                                                                                                                                          
+      @:                                           @@                                            
+      \r\n                                            #@                                            
+      @                                                                                                                                          
+      @:                                           @@                                            
+      \r\n                                            %@                                            
+      @                    @==:.*                                                                                     
+      @       =                  @+                                           #@                                            
+      \r\n                 @@@@@@:                    @@                  @@@@@@@@                  
+      @                    @@@@@@@                                                                                    
+      @@      @@                 @+                @.       @@@               :@                  
+      @@@@                      \r\n                 @@@@@@@@@.                 @@                 
+      =@@                        @                    @@.                                                                                       
+      @@@     @@@                 @*                @@@      @@@                @              
+      #@@@@@@@@@@                   \r\n                 @@     @@@@               
+      @@                  =@@                        @.                   @@%                                                                                       
+      @@@@   @@@@=                @+                @@@@:    @@@                @             
+      @@@#      -@@@                 \r\n                 @@=     .@@@              
+      @@                   @@                        @.                   @@-                                                                                      
+      @@@@@@  @@@@@         @@@.   @%                @@@@@@   @@@               
+      @             @@@          @@@                \r\n                 @@=     
+      @@@               @@                 @@@@@@@@@                   @.                
+      %@@@@@@@@                                                                                  
+      @@# @@@@@@ @@.       @@@@@   @%                @@  @@@- @@@               
+      @     @@@@    @@@           @@@               \r\n                 @@-     
+      @@@               @@                  +@@                        @-                  
+      @@*                                                                                     
+      #@@  @@@@@  @@@         @@    @@                @@:  %@@@@@@               
+      @     @@@@    @@@           @@@               \r\n                 @@:    
+      @@@-               @@                  .@@                        @=                  
+      @@%                                                                                     
+      @@@   @@@.   @@.              @@                @@+    @@@@@               
+      @             @@@           @@@               \r\n                 @@     @@@@               
+      @@                  =@@                        @+                   @@@                                                                                    
+      .@@     @@    @@@              @@                @@*     @@@@               
+      @              @@@@        @@@                \r\n                 @@@@@@@@@                 
+      @@                  @@@@@@@@                   @#                   @@@                                                                                    
+      @@@     *     @@@@             @@                @@@       @@               
+      @                @@@@@@@@@@@@                 \r\n                 @@@@@                     
+      @@                                             @#                                                                                                                                         
+      @@                           #                @                  @@@@@@@                   
+      \r\n                                            @@                                            
+      @%                                                                                                                                         
+      @@                                            @                                            
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @                                            
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                     @@@@@                  @                                            
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                     @@@@.                  @                                            
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @                                            
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @.                                           
+      \r\n                                            @@ .--*%#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#%@@#%##+*-=*..                                                                               
+      .=-=-+#+####### @@ **%%@@@%%##*****+:::+=+--                  @:                                           
+      \r\n @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%=* @@                                            
+      @@                                            -=                                              
+      %*+**=.-=-+=-:..                             @@                                   
+      .   :   @@ ###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \r\n                                           
+      @@                                             @@                                                                                                                                         
+      @@                                            @+                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                  
+      @@@+   @@                      @@@                   @@     @@@                                   
+      \r\n                                            @@                                            
+      @@                                                                                                                                 
+      #@@@@   @@                     @@@@@                  @@    @@@@@                                  
+      \r\n                                            @@                                            
+      @@                                                                                                                                  
+      .@@    @@                      *@@                   @@     @@@                                   
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @@                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @@                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                            @@                                           
+      \r\n                      @@@@                  @@                 @@@    @@@                 
+      @@                     @@@                                                                                      
+      -@@@@@@                    @@                  @@@@@@@@.                 *@                
+      @@@@@@@                    \r\n                  @@@@@@@@@@               
+      @@                 @@@    -@@                  @@                     @@@                                                                                      
+      :@@@@@@@@                  @@                @@@@@  @@@@@@               .@                
+      @@@@@@@@@                  \r\n                 @@@                       
+      @@                 @@@    :@@                  @@                     @@@                                                                                      
+      .@@    @@@                 @@              #@@@        :@@@               @                
+      @@%    @@@                 \r\n                @@@                        
+      @@                 @@@     @@                  @@                     @@@                                                                                       
+      @@    @@@                 @@              @@@           @@@              @                
+      @@@    @@@                 \r\n               @@@                         
+      @@                @@@@@@@@@@@                  @@                     @@@                                                                                      
+      .@@@@@@@@                  @@             %@@            @@@              @                
+      @@@  #@@@                  \r\n               @@@    @@@@@@@              
+      @@                %@@@:=*:%@@                  @@                     @@@                                                                                       
+      @@@@@@                    @@             %@@            @@@              @                
+      %@@@@@@                    \r\n               @@@         @@              
+      @@                 @@@     @@                  @@                     @@@                                                                                       
+      @@                        @@              @@@    @@     @@@              @                
+      @@@ @@#                    \r\n                @@@        @@              
+      @@                 @@@     @@                  @@                     @@@                                                                                       
+      @@                        @@              .@@@   *@@@ #@@@               @                
+      #@@  @@@                   \r\n                 @@@@    -@@@              
+      @@                 @@@     @@                  @@                     @@@                                                                                       
+      @@                        @@                @@@@@@@@@@@@                 @                
+      @@@   @@@@                 \r\n                   @@@@@@@@.               
+      @@                 @@@    %@@                  @@                     @@@                                                                                      
+      #@@=                       @@                   @@@@@@@@@                 @                
+      =@@     =                  \r\n                                           
+      @@                                             @@                                                                                                                                         
+      @@                          @@@@               @                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                             @                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                             @                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                             @                                           
+      \r\n                                            @@                                            
+      %@                                                                                                                                         
+      @@                                             @                                           
+      \r\n                                            @@                                            
+      #@                                                                                                                                         
+      %@                                             @                                           
+      \r\n                                            @@                                            
+      @@                                                                                                                                         
+      @@                                             @                                           
+      \r\n                                            @@                                            
+      .@                                                                                                                                                                                                                                     
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                         
+      @-       \r\n        @+                                                                                                                     
+      @@                                                                @@@                                                                                                                  
+      %@+        \r\n         @@                                                                                                                  
+      @@.                                                                   -@%                                                                                                               
+      @@          \r\n           @@                                                                                                              
+      :@#                                                                       @@=                                                                                                           
+      @@            \r\n            :@*                                                                                                           
+      @@                                                                          
+      @@                                                                                                        
+      @@              \r\n              @@                                                                                                        
+      @@                                                                              
+      @@                                                                                                    
+      =@*               \r\n                @@                                                                                                    
+      @@                                                                                  
+      @@                                                                                                 
+      @@                 \r\n                  @%                                                                                                
+      @@                                                                                      
+      @@                                                                                             
+      @@                   \r\n                   @@                                                                                             
+      +@=                                                                                         
+      @@                                                                                         
+      @@                     \r\n                     @@                                                                                         
+      =@@                                                                                             
+      @@                                                                                     
+      :@%                      \r\n                       @@                                                                                      
+      @@                                                                                                
+      @@*                                                                                  
+      @@                        \r\n                        %@                                                                                   
+      @@                                                                                                    
+      @@                                                                               
+      @@                          \r\n                          @@                                                                               
+      @@                                                                                                        
+      @@                                                                           
+      @@:                           \r\n                            @@                                                                           
+      @@:                                                                                                           
+      @@                                                                        .@@                            
+      \r\n                             :@@                                   .                                   
+      -@@                                                                                                               
+      @@                          @@@@     .     @@@                         @@                              
+      \r\n                               @@:                             @@@@@@@@@                              
+      @@                                                                                                                   
+      @@                         @@@    .@     @@@                       @@                                
+      \r\n                                 @@                           @@@                                   
+      @@                                                                                                                      
+      .@@                       :@@.   @@@   *@@                      @@                                  
+      \r\n                                   @@                         @@@                                 
+      @@                                                                                                                          
+      @@*                      @@@  @@@@@  @@@                     @@                                   
+      \r\n                                     @@                        @@@@#                            
+      @@:                                                                                                                             
+      @@                      @@  @@@@@  @@#                   @@                                     
+      \r\n                                      @@:                        @@@@@@                       
+      +@#                                                                                                                                 
+      @@                    @@@@@@ @@@@@@                  @@                                       
+      \r\n                                        @@                           @@@@                    
+      @@                                                                                                                                     
+      @@                   @@@@   @@@@+                #@                                         
+      \r\n                                          @@                          %@@                  
+      @@                                                                                                                                         
+      @@                 @@@.    @@@                @@                                          
+      \r\n                                            @@                        @@@                
+      @@                                                                                                                                             
+      @@               .@@     -@@              @@                                            
+      \r\n                                             *@@              @@@@@@@@@@               
+      @@.                                                                                                                                                
+      @@              @       @             @@                                              
+      \r\n                                               @@                =@@*                
+      %@@                                                                                                                                                   
+      #@%                                =@%                                               
+      \r\n                                                 @@                                 
+      @@                                                                                                                                                       
+      @@.                             @@                                                 
+      \r\n                                                   @@                             
+      @@                                                                                                                                                           
+      @@                          @@                                                   
+      \r\n                                                    -@@                         
+      @@                                                                                                                                                               
+      @@                      @@                                                     
+      \r\n                                                      %@                      
+      @@                                                                                                                                                                   
+      @@         .        -@@                                                      
+      \r\n                                                        @@                  
+      *@@                                                                                                                                                                      
+      @@     @@@@@     @@              =.      *@@                               
+      \r\n                                                          @@               
+      @@                                                                                                                                               
+      @@@    @@@@               .@@   :@@@#   @@                 @@@    @@@                               
+      \r\n                                  @@@@@@@@@@                @@           
+      @@                 @@@     @@@                                                                                                                      
+      @@@   @@@                  +@=       @@                    @@@  @@@                                
+      \r\n                                  .   @@* .%                 .@@       
+      @@                   @@@     @@@                                                                                                                       
+      @@@ @@@                     @@    .@@                     .@@%@@@                                 
+      \r\n                                      @@                       @@.    @@                    
+      @@@     @@@                                                                                                                        
+      @@@@@                 @@@%   @@ @@   #@@@#                :@@@@                                  
+      \r\n                                      @@+                        @@ *@=                     
+      @@@     @@@                                                                                                                         
+      @@@                 @@@@@    @@@    @@@@@                 @@@                                   
+      \r\n                                      @@=                         .@@                       
+      @@@     @@@                                                                                                                        
+      %@@@@                  %.   %@:  @@                        *@@                                   
+      \r\n                                      @@*                        @@  @@                     
+      @@@     @@@                                                                                                                       
+      +@@@@@-                     @@      @@                      %@@                                   
+      \r\n                                      @@=                      @@     -@@                   
+      @@@     @@@                                                                                                                       
+      @@@ @@@                   @@   -@@   .@@                    #@@                                   
+      \r\n                                      @@*                    @@        
+      @@%                  @@@     @@@                                                                                                                      
+      @@@   @@@                @@    @@@@@    #@:                  @@@                                   
+      \r\n                                      @@@                  @@-           
+      @@                  @@@@@@@@@                                                                                                                      
+      @@@     @@@             #@:      @@@       @@                                                       
+      \r\n                                      @@=                 @@               
+      @@                  .@@@+                                                                                                                                               
+      @@                    @@                                                     
+      \r\n                                                        @@                   
+      @@                                                                                                                                                                  
+      @@                        @@                                                   
+      \r\n                                                      @@                      
+      .@@                                                                                                                                                              
+      @@                            @@                                                 
+      \r\n                                                    @@                          
+      @@-                                                                                                                                                          
+      %@-                              :@@                                               
+      \r\n                                                  #@:                             
+      @@                                                                                                                                                        
+      @@                                  #@*                                             
+      \r\n                                                 @@                                 
+      @@                                                                                                                                                    
+      @@                                      @@.                                           
+      \r\n                                               @@                                     
+      @@                                                                                                                                                
+      @@                         .                @@                                          
+      \r\n                                             @@                                         
+      @@                                                                                                                                            
+      @@:                  @@@@@@@@                   @@                                        
+      \r\n                                           @@                 @@@@     
+      @@@.               @@                                                                                                                                         
+      @@                         @@*                     @@                                      
+      \r\n                                         -@*                   @@@     
+      @@@                 @@.                                                                                                                                     
+      @@                          @@@                        @@                                    
+      \r\n                                        @@                      @@@   
+      @@@                    @@                                                                                                                                  
+      @@                           @@@                          %@-                                  
+      \r\n                                      @@                        .@@-  =@@                      
+      @@                                                                                                                              
+      @@                             @@                             @@                                 
+      \r\n                                    @@                           @@@  @@@                        
+      @@                                                                                                                          
+      .@@                             @@@                               @@                               
+      \r\n                                  @@                              @@@+@@                          
+      =@@                                                                                                                       
+      @@                              @@@                                  @@                             
+      \r\n                                =@@                               :@@@@@                            
+      @@+                                                                                                                   
+      @@                               .@@=  .*                                @@                           
+      \r\n                               @@                                  @@@@                               
+      @@                                                                                                                
+      @@                                :@@@@@@@@@                                
+      @@                          \r\n                             @@                                    
+      @@.                                  @@                                                                                                             
+      @@                                                                             
+      @@                        \r\n                           @@                                      
+      :@                                     @@                                                                                                         
+      @@                                                                                
+      =@+                      \r\n                         #@*                                                                                
+      @@                                                                                                     
+      @@                                                                                    
+      @@                     \r\n                       .@@                                                                                   
+      +@@                                                                                                 
+      @@                                                                                        
+      @@                   \r\n                      @@                                                                                       
+      @@#                                                                                             
+      -@@                                                                                           
+      @@                 \r\n                    @@                                                                                           
+      @@                                                                                           
+      @@                                                                                               
+      @@               \r\n                  @@                                                                                               
+      @@                                                                                       
+      @@                                                                                                   
+      @@             \r\n                =@*                                                                                                  
+      @@                                                                                   
+      @@                                                                                                      
+      -@@           \r\n               @@                                                                                                      
+      @@                                                                               
+      #@*                                                                                                         
+      +@=         \r\n             @@                                                                                                          
+      @@                                                                            
+      @@                                                                                                             
+      @@:       \r\n           @@                                                                                                             
+      =@@                                                                        
+      @@                                                                                                                         
+      \r\n         @@:                                                                                                                
+      @@*                                                                     @@                                                                                                                           
+      \r\n         .                                                                                                                    
+      @@.                                                                  @#                                                                                                                            
+      \r\n                                                                                                                                
+      @.                                                                                                                                                                                               
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                  
+      \r\n                                                                                                                                                                                                                                                                                                                                   "
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -1167,6 +1593,7 @@ MonoBehaviour:
     output: Jesus said to them, 'I am the bread of life; whoever comes to me shall
       not hunger, and whoever believes in me shall never thirst.
     progressionLevel: 2
+    minProgressionLevel: 0
     altOutput: <font="pigpen SDF">Jesus said to them, 'I am the bread of life; whoever
       comes to me shall not hunger, and whoever believes in me shall never thirst.
     entryType: 0
@@ -1247,6 +1674,7 @@ MonoBehaviour:
       \r\n                                                                                                   
       \r\n                                                                                                    "
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -1285,6 +1713,7 @@ MonoBehaviour:
       \r\n                                                                                                   
       \r\n                                                                                                    "
     progressionLevel: 1
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
@@ -1293,13 +1722,355 @@ MonoBehaviour:
       saves the last 10 valid entries that you have inputted. \nUse *history clear
       to reset your history</b>\n\nYou can use the *back command to traverse backwards
       through your history\n\n<b>Use TAB as a shortcut to go back"
-    progressionLevel: 1
+    progressionLevel: 0
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0
-  - name: gospel
-    output: 
-    progressionLevel: 1
+  - name: salvation
+    output: "<size=100>Congrats! \n<size=70><u>You beat the demo !! :3</size>\n</size></u>\nThis
+      is so far the entire game, but feel free to explore any entries you may have
+      missed.\n\nThe phrase to access the feedback form is: <color=white>Finally
+      Finished!</color>\n\nYou can find the feedback form in the #releases channel
+      of the discord! \n\n\n\n"
+    progressionLevel: 2
+    minProgressionLevel: 0
+    altOutput: 
+    entryType: 0
+    slowTypeSpeed: 0
+  - name: whats this motherfucking thing
+    output: " <indent=30%>              <size=7><mspace=0.5em>                                                                                     
+      \r\n                                                                                                                         
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n**                                                                                                 
+      \r\n++++                                                                                               
+      \r\n++++++++**                                                                                         
+      \r\n++++++++++++***                                                                                    
+      \r\n++++++++++++*******##                                                                              
+      \r\n++++++++++++*******#################                                                               
+      \r\n++++++++++***********#################*##                                                          
+      \r\n+++++**********************************####                                                        
+      \r\n********########****************####***#######                                                     
+      \r\n#####################***********########**#######                                                  
+      \r\n############################***#####################                                               
+      \r\n%%%%%%%%%%%%%%%%%%###############%%####################                                            
+      \r\n%%@@@%%%%%%%%%%%%%%%%%%%%#####%%%%%########################                                        
+      \r\n%%%###########%%%%%%%%%%%%%%%%%%%%%%%########################                                      
+      \r\n*****************##############%%%%%%%%#########################                                   
+      \r\n++++++++++++++******************##%%%%%%#######################*##                                 
+      \r\n+++++++++++++++++*****************##%%%%#########################***#                              
+      \r\n++++++++++++++++++****************##%%%%%##########################***##                           
+      \r\n++++++++++**********************###%%%%%%%%##########################****#                         
+      \r\n+++++++*******************#######%%%%%%%%%%%###########################****#                       
+      \r\n++*********************#######%%%%%%%%%%%%%%%##########################******                      
+      \r\n********###############%%%%%%%%@@@%%%%%%%%%%%%######################%%##**++**                     
+      \r\n***#############%%%%%%%%@@@@@@@@@%%%%%%%%%%%%%%%#########################*+++**                    
+      \r\n########%%%%%%%%%%@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%#######################**+++**                   
+      \r\n#%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%######################*++++*#                  
+      \r\n%%%%@@@@@@@@@@@@@@@@@@@%%%%%@@@@@%%%%%%%%%%%%%%%%%%%%######################*++++*                  
+      \r\n@@@@@@@@@@@@@@@@@@@%%%%%%%%%%%@@@@@@%%%%%%%%%%%%%%%%%######################*++++*                  
+      \r\n@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%@@@%%%%%%%%%%%%%%%%%#####################*++++*#                 
+      \r\n@@@@@@@@@@@@@@%%%%%%%%%%%%%%%#%%%%%%@@%%%%%%%%%%%%%%%%#####################*++++*#                 
+      \r\n@@@@@@@@@@%%%%%%%%%%%%%%%%%%%#####%%%%@%%%%%%%%%%%%%%%%####################+++++*#                 
+      \r\n@@@@@@@%%%%%%%%%%%%%%%%%%############%%%%%%%%%%%%%%%%%%%##################*+++++*                  
+      \r\n@@@@%%%%%%%%%%%%%%%%%%%%%#############%%%%%%%%%%%%%%%%%%%%###############*++++++*                  
+      \r\n@@%%%%%%%%%%%%%%%%%%%%%%################%%%%%%%%%%%%%%%%%###############*++==+++#                  
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%#################%%%%%%%%%%%%%%%%%##############++===++*                   
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%####################%%%%%%%%%%%%%%%############++===++*                    
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%#############################################*+===+++*                     
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%############################################*+====++*                      
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%###########%################%%%%%########*+====+++*#                      
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%###########%%%################%%%%%%%#%%#*+====++*#%                       
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%##########%%%#################%%%%%%%#*+====+++*##                        
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%##########%%####################%%#*+=====++*###                         
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%########%%#######%#############*+======++*##%                          
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#####%%%%%%%%#############*+====++++*###                            
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##%%%%%%%#############*++===++++*#%%#                             
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%####%%###############*++===++++*##%#%                              
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###################**+=====+++**####%                               
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###############**+++=++=++**#######                                
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##############***+++++++++**###%####                                 
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%#%%%%%############***+++++++++**###%%##%#%                                  
+      \r\n%%%%%%%%%%%%%%%%%%%%%#################**++++++++++**##%%%%##%%%                                    
+      \r\n%%%%%%%%%%%%%%%%%%%%%##############***++++++++++**##%%%###%%                                       
+      \r\n###%%%%%%%%%%%%%%%%%%%########****++++++++++++**#%%%####%%                                         
+      \r\n#########%%%%%%%%%%#######*****++++++++++++**##%######%                                            
+      \r\n####################*******+++++++++++****#########%                                               
+      \r\n%%%%%#######**************++++++******##########%                                                  
+      \r\n@@@@%%%%%%#####*#**************###########%%%                                                      
+      \r\n@@%%%%%%%%%%%%%%%%%###############%%%%%%%                                                          
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                    "
+    progressionLevel: 2
+    minProgressionLevel: 0
+    altOutput: 
+    entryType: 0
+    slowTypeSpeed: 0
+  - name: the saturn burger
+    output: "<size=7><mspace=0.5em><indent=30%>                                                                                                   
+      \r                     \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n----------------                                                                                   
+      \r\n--------::::::----                                                                                 
+      \r\n----------:::::----                                                                                
+      \r\n========----::-----=                                                                               
+      \r\n=========::::-.::::::                                                                              
+      \r\n=========--=:-:-::-::-                                                                             
+      \r\n+++++++++========-:-----                                                                           
+      \r\n+++++++++++++++====-------=                                                                        
+      \r\n+++**++++++++++++====--------                                                                      
+      \r\n+++=========+++++++===----::---                                                                    
+      \r\n=-----::::::::--==+====-----:.:::                                                                  
+      \r\n--------::::::::::--===-----:.-:::.                                                                
+      \r\n=====----:::::::::::::-------:..::.:                                                               
+      \r\n=======----:::::::::::::::-----------=                                                             
+      \r\n++++++====-------:::::::::::::::------=                                                            
+      \r\n++++++++====--------:::::::::::::::::--=                                                           
+      \r\n++++**+++++=====--------:::::::::::::::::--=                                                       
+      \r\n*********++++=====--------::::::::::::::::::--=                                                    
+      \r\n**********++++++=====-------::::::::::::::::::--=                                                  
+      \r\n*************+++++====---------::::::::::::::::--=                                                 
+      \r\n**************++++++=====------------------:::::--=                                                
+      \r\n#######**********+++++========--------------------=+                                               
+      \r\n###########*******++++++======================----==+                                              
+      \r\n#############*******+++++++=========================+                                              
+      \r\n################******+++++++++++++++++++++++++=====+                                              
+      \r\n#################**************************++++++===+*                                             
+      \r\n####################**************************++++==+*                                             
+      \r\n#########################################*******+++=+**                                            
+      \r\n##############################################****++=++                                            
+      \r\n##########%%############%%%%%%%%%%%%%%%%%#######**++==+*                                           
+      \r\n#######%%%%%%%%%%%%###%%%%%%%@@@@@@@@@@@%%%%%####**++++*                                           
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@@@@@%%%%##**+*****                                        
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@@@@@@@@@@%%%%%%####*****+++===++***                                  
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@@%%@%%%%%%%%##***++==---------====+++***                             
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%####**+++===------:--------====++**                         
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#####**+++====--------:::--------===+++*                      
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#####***++++====--------------------===+++*                    
+      \r\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#######****+++======------------------=====+++                   
+      \r\n%%%%%%%%%%#%%%%%%#######%%%%%%############***++++=======----------------======++*                  
+      \r\n%%%%%%%%%%################################******++++=========================++++*                 
+      \r\n*##%%%%%%%%%###############################******++++++++==================+++++++*                
+      \r\n**#%%%%%%@@@@%%%%####################*****************++++++++++++++++++++++++++++*                
+      \r\n****##%%%@@@@@@@%%%%################***************************+++++++****++++++++*                
+      \r\n*******##%%@@@@@@@%%%%%%%%%%#########****************************************++++**                
+      \r\n***********##%%%%@@@%%%%%%%%%%%%%%%%#########*********************************+++*                 
+      \r\n******++*******##%%%%%%@@%%%%%%%%%%%%%%#############*****************************                  
+      \r\n********+++*********###%%%%%%%%%%%%%%%%%%%#####################*******###****++*                   
+      \r\n##**********++++++++******###%%%%%@@@@@@@@@%%############*********######%#***++=+                  
+      \r\n######*******+++++++++++++++++**#%%@@@@@@@@@@@%%######***+++++++************+=====                 
+      \r\n########********++++++++++++++++++++**##%%@@@@@@@%##*********+++++****+++=++=======                
+      \r\n%############*******++++++++++++++++++++++++***###**++++++***+++++++++++==========+                
+      \r\n%%%##############*****++++++++=============+++++++++++=+++++============-------===                 
+      \r\n%%%%################*****++++++++====================-==----------------------===                  
+      \r\n%%%%%#################******++++++===============----===---------------------===                   
+      \r\n%%#####################*********+++++++=================---------------==-===+                     
+      \r\n%%%%%#####################************++++++++++==============-----===+++*                         
+      \r\n     %%########################*****************+++++****++++++++***++++++                         
+      \r\n        %%%##########################*********++**+++***********+++++++++=                         
+      \r\n            %%##################%%%%########******************++++++++++++                         
+      \r\n               %%%%#########%%%%%%%%%%%%%%%%%##############**+++++++++***                          
+      \r\n                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###*********##**                           
+      \r\n                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###***********                            
+      \r\n                             %%%%%%%%%%%%%%%%%%%%%%######%#####*******                             
+      \r\n                                   %%%%%%%%%%%%%%%%#############***#                               
+      \r\n                                           %%%%%%%%%###############                                
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                    "
+    progressionLevel: 2
+    minProgressionLevel: 0
+    altOutput: 
+    entryType: 0
+    slowTypeSpeed: 0
+  - name: the tomatonator
+    output: "<size=7><mspace=0.5em><indent=30%>                                                                                                    
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n--============--==                                                                                 
+      \r\n::::::::::::::::::::-=                                                                             
+      \r\n:::::::::::::::::::::---                                                                           
+      \r\n---:----:::::::::-::------+                                                                        
+      \r\n-----------------------------+                                                                     
+      \r\n--------------------------------=+                                                                 
+      \r\n------------------------------------=+                                                             
+      \r\n---------------------------------------=+*                                                         
+      \r\n----------==------------------==-----------=+                                                      
+      \r\n==--=============--====--================-----=*                                                   
+      \r\n=============================================-===*                                                 
+      \r\n===++++==++++++++++++++++++++==++++++=============+                                                
+      \r\n-----====++**++*****+++++++++++**++++++++++++++++==+                                               
+      \r\n------------=++*####***********#******++++++++++++++==                                             
+      \r\n--------------------=+**#####%%%####*************++++++                                            
+      \r\n-----------------------------==++*############*****+++++                                           
+      \r\n===--------------------------------=*%%%%%%%%%%##***++++                                           
+      \r\n=======--=====----------------------==*##%@@@@%%##****++*                                          
+      \r\n==================---==--===-----=======+*%%%##****++**++***                                       
+      \r\n==============================--=============---------+*******                                     
+      \r\n===============================================-----:-====+******                                  
+      \r\n=================================================-:---=----===++++                                 
+      \r\n===================================-================----------=====+                               
+      \r\n==============================++++==========-=====++==--:::::----====                              
+      \r\n================+=++++++++=================-======+===---:::----=======                            
+      \r\n===========++****###****+++++++++=================++*#*+*######**+======                           
+      \r\n++=+++++++*#%@%#%%##*********+++++++==+++========+*************###**=====                          
+      \r\n             @%%%###*##*####%###****++++++=+++++++***##%%%%%###*****%#+==                          
+      \r\n               %%###%#####%%%%%%@%%###******+**#%%%##%%%%@@%%#**++**##%#+=                         
+      \r\n                 ############%%%%%##%%#**++++===+*###%%%%%%%%#*+++++****#*                         
+      \r\n                  *####%%%%%%%##%%%%##**++==+++*###*####%%%%##*+++++++***#*                        
+      \r\n                  ###%%%%%%%%%%#%%%##*++++=++*+*####%%%%%%%%%%#****+*******                        
+      \r\n                #%%%%%%%%%%%%@@@@@@@%%%#*+++++#%%%@@@@@@@@%%@@%%#%#####**##                        
+      \r\n                @%%@@@@@@@@@@@@@@@@@@@@@@@@%#***#@@@@@@%%@@@@@@%%%%%%####%                         
+      \r\n                @@@@@@@@@@@@@@@@@@@@@@@@%%%%##**#%%%@@@@@@@@@@@@%%%%#***##                         
+      \r\n                @@@@@@@@@@@@@@@%%%%%%%####%##****#%%%%%%%%%%@@@@@%%%%%%%#                          
+      \r\n                  @@@@@@%%%%%%%%%%%%%%%%%%%##**###**############%@@%%@%#                           
+      \r\n                  @@@@%%%%%%%%%%%%%%%########*+*****##%%%%##****++*%%##                            
+      \r\n                    %%%%%%%%%%%%%%%%##*******+++++++*****+++***+++++*##                            
+      \r\n                    %@%########%%%%%%%#*++=====+++===++++=+++++++*+=*##%                           
+      \r\n                    #%%#####***##***+++==---==++=========+++++++++=++*#%%#                         
+      \r\n                    #%%###********+==------=----=======++========-=++*##%%#*                       
+      \r\n                   %%####********++=---::::-:::-----=------=====-=++**####%%#*                     
+      \r\n                   %%%###***********++=----::::--=++++++==----=+++++**######%%%**                  
+      \r\n                   %%###*******************++=+++****++====-:-=+++++**%%###*####****               
+      \r\n                  %%@%##****************************+++==-=*==++++++**#######*###*****+            
+      \r\n                 @@@@%##*****************************+==---=++++++++******#####**#*****            
+      \r\n                @@@@@%##*****************************+=----=++++++++*****#*#####*******            
+      \r\n               @@@@@%%##*****************************+=----=++**+++*****##*#####****+**            
+      \r\n              @@@@@@@%%#*****************************+======++*++******####************            
+      \r\n              @@@@@%%####****************************+++++++*+++******####%%%%#*++*****            
+      \r\n             %@@%%##**###******************************+++*********#***##%%%###****#*#*            
+      \r\n            %%%##*******##****************************************##+**#%%%##*******###            
+      \r\n          %##*****+++++**##**************************************##*+*#%@@%%%####**####            
+      \r\n          #*+++++++++++**######********************************##**++%%@@%%###**++*##**            
+      \r\n         #*+++++++++=+++***#######***************************##***++*%@@@%####**++*###*            
+      \r\n         #*+++++++======+++*######******************************++++#%%%%%######**%%%#*            
+      \r\n         #%##**+++=========+**###*****#**********************++++==+%%@@@%%%##*++*#%%##            
+      \r\n          %%%%%%%#*+======+****+++++****##########*****+++++=======#@@@%@%#***+++*#%%##            
+      \r\n           %%%%@@@@@%#*+==+++**=======++++*++++++=============----=#%%%###***++***#%%##            
+      \r\n            %%#%%%%%%%@@@%**+**+---------===---------=====++=----=*%%##*******+*++*#%##            
+      \r\n             %%#*##%%@@@@%*****#***+++++++==------------=+==----=%%%@@%%##******++*#%%%            
+      \r\n              %%%#*+++*##****##%%%#####***##**++++==-----==+====%%@%***#%#*==*###**#%%#            
+      \r\n               @%%%#*+++*****#%%%%%##%%%%#*******##**+=====++=+%%%##***********++**#%##            
+      \r\n                @@%%##**+****###%%###%%%%%%###########***=====*##************+++**#%%#             
+      \r\n                 @@%%####****+++**##**###%%#########%%%###*==*##*********+++++**##%%%#             
+      \r\n                   %%#####***+++++******#####%###*##%@%%%%########***#**++++***###%%#              
+      \r\n                     %#########****##******#####%%%%%%%#*##%#####******+++****#####                
+      \r\n                        %###***********#*******#######***######***********#*****                   
+      \r\n                            ##************************************************                     
+      \r\n                                ***++**++***++******************************                       
+      \r\n                                        #****++++++++**+++++++************                         
+      \r\n                                                **+++++++++++++++++++**                            
+      \r\n                                                            ******                                 
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                   
+      \r\n                                                                                                    "
+    progressionLevel: 2
+    minProgressionLevel: 0
+    altOutput: 
+    entryType: 0
+    slowTypeSpeed: 0
+  - name: fuck is this shit
+    output: "<size=7><mspace=0.5em><indent=30%>\n\n\n=-----------------------------------------------------------:--------::::::-                       
+      \r\n====-----------------------------=======-------------------:::::------::::::                       
+      \r\n======---------------------------========-------------------::::::::-----:::-                      
+      \r\n===========--=============================---------------------:::::::--------                     
+      \r\n===========================================------------------------:::::-------                    
+      \r\n============================================---------------------------:-------                    
+      \r\n=============================================---------------===----------------=                   
+      \r\n=============+++++++++++++++++===============---------=========----------------=                   
+      \r\n======++++++++++++++++++++++++===============--------===========---------------=                   
+      \r\n+++++++++++++++++++++++++++++++===============-------===========---------------=                   
+      \r\n++++++++++++++++++++++++++++++++================-=--============-------===------=                  
+      \r\n+++++++++++++++++++++++++++++++++++==+==============================---=====-----+                 
+      \r\n+++++++++++++++++++++++++++++++++++++++++++++++=====++++++++================-----=                 
+      \r\n+++++++++++++++++++++++++++++++++++++++++*++++++++++++++++++++++============-----=                 
+      \r\n++++++++++++++++++++++++++++++++++++++******++++************++++++++++++======----                 
+      \r\n+++++++++++++++++++++++++++++++*****++*********####****************++++++++===----                 
+      \r\n+++++++++++===++++++++++++****+====++***+*+=-:-+##*  #######**************++===---                 
+      \r\n++++++++++++====++++++++*##%#*==++**++*****####+====         #######%%%##**+++==---                
+      \r\n+++++==+========+++++*##%%%%#*=+*******++++***##*+----        #%%%%%%%%###**++==---                
+      \r\n++++============++=+##%%%###+-=+***+++**######*++**+---      ##%%@%%%%%###***+==---                
+      \r\n++===============+*%###%###*+==+*#%%%##%%%%%%#**+**##+==**##%%%%@@@@%%%###***++==--                
+      \r\n+========-----==+#%%%#####*++++++=++*###%%%%%#**+=+*##****###*##%%@@@%%%###**++==--                
+      \r\n========------=+#%%##%%%%#**+++++++**###%%%%#*+-=***+++***+*++++**#%@@%%%###**++===                
+      \r\n===-=-=------=+#%%%%%%%%%##*+++=+++*##***###*****+***#*+=--**+*****+#%@@%%%##**++=                 
+      \r\n==----=------=#%%%%%%%%%%%###*+====+*#**##*+=+*########***=+**********#%%%%##**+++                 
+      \r\n===---------=*%%%%%%%%%%%%%%%%#**++*#%#*==--+************++++***********#%%##**++                  
+      \r\n===---------=#%%%%%%%%%%%%%%%%%%#*++*+--::-+************+++++++++++++*****###**++                  
+      \r\n===--------=+#%%%%%%%%%%%%%%%%%###+===-==++++***********++++++++++++++++****#**+                   
+      \r\n===---------+#%%%%%%%%%%%%%%%%##*+==++=======+***********+++++++====++++++++***                    
+      \r\n===---------=*%%%%%%%%%%##%%###**#**+===--===++*********+++++++++======+++++++                     
+      \r\n==----------=+*%%##########**#####*+-------==++*********+++++++++++======++++++                    
+      \r\n=------------=+*###########%%%####*=------===++*********+++++++++++++++===+++++                    
+      \r\n==-----------==+*#%%####%%%%%%####*+=========++***********+++++++*+++======+++++                   
+      \r\n=====---------==+*#%%####%%%%%####**+++++++++++*********+++++++****+++===-==++++                   
+      \r\n++=======-----==++*#####*##%%%#####********++**********************+++==--===+++                   
+      \r\n++++=======----==++*########%%######***************************+++++++===---==                     
+      \r\n++++++============+**##%%%##%%%######*************************++++++++=----=                       
+      \r\n++++++++==========+++*##%%%#%%%#######************+**********++++++=======                         
+      \r\n+++++++++=========+++**##%%%@%%########***********+******++++++++===+++=                           
+      \r\n++++++++++=======+++++**###%%%%%###*********************++++++++++++++                             
+      \r\n ++++++++++++===+++++++***##%%%%####*****************+++++++++++++                                 
+      \r\n   ++++++++++++++++++++*****#%%%%###**************++++++++++=                                      
+      \r\n    ++*****++++++++++++******##%%%##***********+++++++++++++                                       
+      \r\n       ****+++++++++++++++*****##%%#*********+++++++++++++++                                       
+      \r\n         ***+++++++++++++++*******###******+++++++++++++*********#                                 
+      \r\n   ####   ******++++++++++***********#*****++++++++=============++**     
+      **                        \r\n   #%####***#****###*********++*++++***++***+++++=====---======++*##  
+      ******                       \r\n   #####%%%%%%%%%%%####*+===+++**+++**+====+++**++---==========++*#####******                      
+      \r\n  **####%#%%%%%@@@%%##*++++============++++++++**+=-----=======+#########***#                      
+      \r\n  ####%%#*%@@@@@@%#*****+++==========+++++++++===--------=====+######****###                       
+      \r\n   ##%%%@%%@@@@%#*#*###*+===========++++++++==--=---==========*#%%%%%%######                       
+      \r\n   %%%%@@@@@@@%#+++**##*======-=====++++++=======---------==-=*#%%%%%##%##%%                       
+      \r\n   %%%%@@@@@@#*++=+++***================+====+==----=========+##%@@%%######%                       
+      \r\n     %%@@@@%**+++==++*#*+====--==========--==++=-----==-====+*#%@@@%%#####%                        
+      \r\n          #*+++++===+**+====---=========---=+==============++*%@@%%%##***##                        
+      \r\n         **++++++===++*+===---==========--===========--===+++#@@@%########%@                       
+      \r\n        *+++++=+++++++**+=---======------==================++#@@@%%%%####%%%                       
+      \r\n        ++++++++====+++++++==---====----====================*%@@@@%%##***#%%@                      
+      \r\n       #*++*++++===========================---===========+++%%%%%%########%%%                      
+      \r\n        %%%#**+++++======================----=========+===++%@%%%##########%%                      
+      \r\n        %%%%%%%%#*++=================+=-=============++===+*%%%%###########%%                      
+      \r\n         %%%%%%%%%%%%#*+++==--==---==+=--=========++*+===+#@@@@%%%%##%%%###%@                      
+      \r\n           %%##%%%%@@@@@%%#**+++===+++===========++*+++++#@@%####%#**%####%%                       
+      \r\n            @%%#***##%%%%%%%%%%%#%######***+++====++***+*%@%%%#######**##%%%                       
+      \r\n             @@%%##**####%%%%%%%%%%%###########*+++++*+*#%#########***##%%%                        
+      \r\n              @@@%%##*****####%##%%%%%%%%%#####%###*+++#%#######****#####%                         
+      \r\n                @@%%%###******#%####%%%#%%%##%%%@%%%###%%%######**#######                          
+      \r\n                  %%%%%####****##########%%%%%%%%%##%%#################                             "
+    progressionLevel: 2
+    minProgressionLevel: 0
     altOutput: 
     entryType: 0
     slowTypeSpeed: 0

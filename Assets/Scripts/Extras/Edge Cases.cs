@@ -2,6 +2,9 @@ using System.Collections;
 using System.Threading;
 using TMPro;
 using UnityEngine;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System;
 
 public class EdgeCases : MonoBehaviour
 {
@@ -9,6 +12,12 @@ public class EdgeCases : MonoBehaviour
     public bool nullOrAsk = false;
     BIOS bios;
     Progression progression;
+    [DllImport("user32.dll")]
+    private static extern IntPtr GetActiveWindow();
+
+    [DllImport("user32.dll")]
+    private static extern bool SetForegroundWindow(IntPtr hWnd);
+
     public void HandleEdgeCases(string input)
     {
         progression = GetComponent<Progression>();
@@ -19,23 +28,37 @@ public class EdgeCases : MonoBehaviour
             nullOrAsk = true;
         }
 
-        if (input.Contains("hell") && progression.seenHell == false && !input.Contains("hello") && progression.progressionLevel == 0)  
+        if (input.Contains("hell") && progression.seenHell == false && !input.Contains("hello") && progression.progressionLevel == 0)
         {
+            IntPtr unityWindow = GetActiveWindow(); // Move this to the very beginning
+
             AudioListener.volume = 0f;
             Time.timeScale = 0f;
-            Thread.Sleep(1500);
+            Thread.Sleep(2384 / 2);
+
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = "cmd.exe",
+                Arguments = "/c exit",
+                UseShellExecute = true,
+                WindowStyle = ProcessWindowStyle.Normal, // Also change to Minimized
+                CreateNoWindow = false
+            };
+            Process.Start(startInfo);
+            Thread.Sleep(2384 / 2);
+
+            SetForegroundWindow(unityWindow);
             Time.timeScale = 1f;
             AudioListener.volume = 1f;
-
             progression.seenHell = true;
             bios.audioManager.backgroundSource.Stop();
-            Debug.Log("should stop now");
+            UnityEngine.Debug.Log("should stop now");
             StartCoroutine(WaitSound(5f));
         }
 
         if (input.Contains("serverdisruption") && !progression.seenDisruption) 
         {
-            Debug.Log("goat shit here");
+            UnityEngine.Debug.Log("goat shit here");
             var cameraEffect = Camera.main.GetComponent<ScreenShearEffect>();
             if (cameraEffect != null)
             {
