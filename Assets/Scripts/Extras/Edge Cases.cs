@@ -34,20 +34,8 @@ public class EdgeCases : MonoBehaviour
 
             AudioListener.volume = 0f;
             Time.timeScale = 0f;
-            Thread.Sleep(2384 / 2);
+            Thread.Sleep(2384);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo
-            {
-                FileName = "cmd.exe",
-                Arguments = "/c exit",
-                UseShellExecute = true,
-                WindowStyle = ProcessWindowStyle.Normal, // Also change to Minimized
-                CreateNoWindow = false
-            };
-            Process.Start(startInfo);
-            Thread.Sleep(2384 / 2);
-
-            SetForegroundWindow(unityWindow);
             Time.timeScale = 1f;
             AudioListener.volume = 1f;
             progression.seenHell = true;
