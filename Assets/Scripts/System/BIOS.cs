@@ -148,9 +148,10 @@ public class BIOS : MonoBehaviour
                     if (inp.text.Contains("*ask")) 
                         AddHistory();
 
-
+                    EntryTracker.MarkAsFound(entry.name);
                     string processedOutput = entry.ProcessOutput(this);
-                    string highlightedEntry = Highlight.HighlightEntries(processedOutput, database);
+                    string underlinedEntry = Highlight.UnderlineEntries(processedOutput);
+                    string highlightedEntry = Highlight.HighlightEntries(underlinedEntry, database);
 
                     if (entry.progressionLevel > progression.progressionLevel)
                     {
@@ -177,7 +178,8 @@ public class BIOS : MonoBehaviour
                             else
                             {
                                 string processedAltOutput = entry.ProcessAltOutput(this);
-                                highlightedEntry = Highlight.HighlightEntries(processedAltOutput, database);
+                                underlinedEntry = Highlight.UnderlineEntries(processedAltOutput);
+                                highlightedEntry = Highlight.HighlightEntries(underlinedEntry, database);
                                 output.text = highlightedEntry;
                                 return;
                             }

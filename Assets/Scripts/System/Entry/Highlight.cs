@@ -36,6 +36,18 @@ public class Highlight
         return output;
     }
 
+    public static string UnderlineEntries(string entryText)
+    {
+        foreach (var entry in EntryTracker.GetAllFoundEntries())
+        {
+            // Use word boundaries to avoid mid-word matches
+            string pattern = $@"(?<!<u>)\b({Regex.Escape(entry)})\b(?!</u>)";
+            entryText = Regex.Replace(entryText, pattern, "<u>$1</u>", RegexOptions.IgnoreCase);
+        }
+
+        return entryText;
+    }
+
     public static string RemoveTags(string output)
     {
         output = output.Replace("<ignore>", "");
