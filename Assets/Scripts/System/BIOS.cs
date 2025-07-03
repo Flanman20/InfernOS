@@ -93,6 +93,7 @@ public class BIOS : MonoBehaviour
                 case string i when i.Contains("*settings"): Settings(); break;
                 case string i when i.Contains("*back"): Back(); break;
                 case string i when i.Contains("*exit"): Exit(); break;
+                case string i when i.Contains("*test"): Test(); break;
                 default: output.text = "Unrecognized input. Type *help for list of commands"; break;
             }
         }
@@ -342,6 +343,17 @@ public class BIOS : MonoBehaviour
             inp.text = "";
             ignore = true;
             return;
+        }
+    }
+
+    public void Test()
+    {
+        Debug.Log("yeah it went thru");
+        output.text = "";
+
+        foreach (var entry in EntryTracker.GetAllFoundEntries())
+        {
+            output.text += entry.ToString() + "\n";
         }
     }
 }
