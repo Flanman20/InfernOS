@@ -19,8 +19,8 @@ MonoBehaviour:
       like so. Some passwords are sometimes indicated with a set of green boxes \uFFFD\uFFFD\uFFFD\uFFFD.\n\nTo
       enter a deeper layer, find and enter any unique password into the console.
       \n\n<b>passwords are always one unique word with no numbers and may only be
-      used once. \nIf included, they will be parsed regardless of other text.</b>\n\n<color=green>Current
-      Layer: {bios.progression.progressionLevel}"
+      used once. \nIf included, they will be parsed regardless of other text. \nPasswords
+      never share a name with an entry</b>\n\n<color=green>Current Layer: {bios.progression.progressionLevel}"
     progressionLevel: 1
     minProgressionLevel: 0
     altOutput: "Some entries are blocked behind a password and are either<color=red>

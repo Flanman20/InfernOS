@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
+using static UnityEngine.EventSystems.EventTrigger;
+using UnityEngine;
 
 public class Highlight
 {
@@ -36,15 +39,14 @@ public class Highlight
         return output;
     }
 
+
     public static string UnderlineEntries(string entryText)
     {
         foreach (var entry in EntryTracker.GetAllFoundEntries())
         {
-            // Use word boundaries to avoid mid-word matches
-            string pattern = $@"(?<!<u>)\b({Regex.Escape(entry)})\b(?!</u>)";
+            string pattern = $@"(?<!<color=[^>]*)\b({Regex.Escape(entry)})\b(?!</u>)(?![^<]*>)";
             entryText = Regex.Replace(entryText, pattern, "<u>$1</u>", RegexOptions.IgnoreCase);
         }
-
         return entryText;
     }
 

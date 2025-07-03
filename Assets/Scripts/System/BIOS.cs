@@ -150,14 +150,14 @@ public class BIOS : MonoBehaviour
 
                     EntryTracker.MarkAsFound(entry.name);
                     string processedOutput = entry.ProcessOutput(this);
-                    string underlinedEntry = Highlight.UnderlineEntries(processedOutput);
-                    string highlightedEntry = Highlight.HighlightEntries(underlinedEntry, database);
+                    string highlightedEntry = Highlight.HighlightEntries(processedOutput, database);
+                    string underlinedEntry = Highlight.UnderlineEntries(highlightedEntry);
 
                     if (entry.progressionLevel > progression.progressionLevel)
                     {
                         if (entry.entryType == Entry.type.Corrupted)
                         {
-                            string corruptedEntry = Highlight.CorruptText(highlightedEntry);
+                            string corruptedEntry = Highlight.CorruptText(underlinedEntry);
                             output.text = corruptedEntry;
                             return;
                         }
@@ -178,9 +178,9 @@ public class BIOS : MonoBehaviour
                             else
                             {
                                 string processedAltOutput = entry.ProcessAltOutput(this);
-                                underlinedEntry = Highlight.UnderlineEntries(processedAltOutput);
-                                highlightedEntry = Highlight.HighlightEntries(underlinedEntry, database);
-                                output.text = highlightedEntry;
+                                highlightedEntry = Highlight.HighlightEntries(processedAltOutput, database);
+                                underlinedEntry = Highlight.UnderlineEntries(highlightedEntry);
+                                output.text = underlinedEntry;
                                 return;
                             }
                         }
@@ -191,9 +191,9 @@ public class BIOS : MonoBehaviour
 
                     switch (entry.entryType)
                     {
-                        case Entry.type.Normal: output.text = highlightedEntry; break;
-                        case Entry.type.Corrupted: output.text = highlightedEntry; break;
-                        case Entry.type.SlowType: slowType.TypeLine(highlightedEntry, entry.slowTypeSpeed, output, this, database, true); break;
+                        case Entry.type.Normal: output.text = underlinedEntry; break;
+                        case Entry.type.Corrupted: output.text = underlinedEntry; break;
+                        case Entry.type.SlowType: slowType.TypeLine(underlinedEntry, entry.slowTypeSpeed, output, this, database, true); break;
                     }
                     return;
                 }
