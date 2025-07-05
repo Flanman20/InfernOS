@@ -44,8 +44,11 @@ public class Highlight
     {
         foreach (var entry in EntryTracker.GetAllFoundEntries())
         {
-            string pattern = $@"(?<!<color=[^>]*)\b({Regex.Escape(entry)})\b(?!</u>)(?![^<]*>)";
-            entryText = Regex.Replace(entryText, pattern, "<u>$1</u>", RegexOptions.IgnoreCase);
+            foreach (var entryName in entry.Split(", "))
+            {
+                string pattern = $@"(?<!<color=[^>]*)\b({Regex.Escape(entryName)})\b(?!</u>)(?![^<]*>)";
+                entryText = Regex.Replace(entryText, pattern, "<u>$1</u>", RegexOptions.IgnoreCase);
+            }
         }
         return entryText;
     }
