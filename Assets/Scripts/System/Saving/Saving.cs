@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.IO;
 using System;
+
 public class Saving : MonoBehaviour
 {
     public Database database;
@@ -12,14 +13,17 @@ public class Saving : MonoBehaviour
     string passwordPath;
     string savesDirectory;
     string progressionPath;
+    string foundEntriesPath;
+
     public void Awake()
     {
         savesDirectory = Path.Combine(Application.persistentDataPath, "saves");
         historyPath = Path.Combine(savesDirectory, "history.json");
         passwordPath = Path.Combine(savesDirectory, "passwords.json");
         progressionPath = Path.Combine(savesDirectory, "progression.json");
-
+        foundEntriesPath = Path.Combine(savesDirectory, "foundEntries.json");
     }
+
     public void Save()
     {
         if (!Directory.Exists(savesDirectory))
@@ -34,9 +38,15 @@ public class Saving : MonoBehaviour
         ProgressionData progressionData = progression.GetSaveData();
         string progressionSave = JsonUtility.ToJson(progressionData);
 
+        // Save found entries
+        FoundEntriesData foundEntriesData = new FoundEntriesData();
+        foundEntriesData.foundEntries = EntryTracker.GetFoundEntriesForSaving();
+        string foundEntriesSave = JsonUtility.ToJson(foundEntriesData);
+
         File.WriteAllText(historyPath, historySave);
         File.WriteAllText(passwordPath, passwordSave);
         File.WriteAllText(progressionPath, progressionSave);
+        File.WriteAllText(foundEntriesPath, foundEntriesSave);
     }
 
     public void Load()
@@ -69,6 +79,15 @@ public class Saving : MonoBehaviour
                 ProgressionData data = JsonUtility.FromJson<ProgressionData>(progressionJson);
                 progression.LoadFromData(data);
                 Debug.Log("Loaded progression level: " + progression.progressionLevel);
+            }
+
+            // Load found entries
+            if (File.Exists(foundEntriesPath))
+            {
+                string foundEntriesJson = File.ReadAllText(foundEntriesPath);
+                FoundEntriesData foundEntriesData = JsonUtility.FromJson<FoundEntriesData>(foundEntriesJson);
+                EntryTracker.LoadFoundEntries(foundEntriesData.foundEntries);
+                Debug.Log($"Loaded {foundEntriesData.foundEntries.Count} found entries");
             }
         }
         catch (Exception e)
