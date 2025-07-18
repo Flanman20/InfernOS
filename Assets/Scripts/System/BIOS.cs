@@ -94,6 +94,7 @@ public class BIOS : MonoBehaviour
                 case string i when i.Contains("*back"): Back(); break;
                 case string i when i.Contains("*exit"): Exit(); break;
                 case string i when i.Contains("*test"): Test(); break;
+                case string i when i.Contains("*clear"): EntryTracker.ClearFoundEntries(); break;
                 default: output.text = "Unrecognized input. Type *help for list of commands"; break;
             }
         }

@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using static UnityEngine.EventSystems.EventTrigger;
 using UnityEngine;
+using System.Linq;
 
 public class Highlight
 {
@@ -40,19 +41,115 @@ public class Highlight
     }
 
 
+
     public static string UnderlineEntries(string entryText)
     {
+        // Collect all entry names and sort by length (longest first)
+        var allEntryNames = new List<string>();
         foreach (var entry in EntryTracker.GetAllFoundEntries())
         {
             foreach (var entryName in entry.Split(", "))
             {
-                string pattern = $@"(?<!<color=[^>]*)\b({Regex.Escape(entryName)})\b(?!</u>)(?![^<]*>)";
-                entryText = Regex.Replace(entryText, pattern, "<u>$1</u>", RegexOptions.IgnoreCase);
+                allEntryNames.Add(entryName.Trim());
             }
         }
-        return entryText;
+
+        // Sort by length descending to prioritize longer matches
+        allEntryNames = allEntryNames.OrderByDescending(name => name.Length).ToList();
+
+        // Create a clean version without HTML tags for matching
+        string cleanText = Regex.Replace(entryText, @"<[^>]+>", "");
+
+        // Find all matches in the clean text
+        var matches = new List<(int start, int end, string matchedText)>();
+
+        foreach (var entryName in allEntryNames)
+        {
+            string pattern = $@"\b({Regex.Escape(entryName)})\b";
+            var regexMatches = Regex.Matches(cleanText, pattern, RegexOptions.IgnoreCase);
+
+            foreach (Match match in regexMatches)
+            {
+                // Check if this position is already covered by a longer match
+                bool isOverlapped = matches.Any(m =>
+                    (match.Index >= m.start && match.Index < m.end) ||
+                    (match.Index + match.Length > m.start && match.Index + match.Length <= m.end) ||
+                    (match.Index <= m.start && match.Index + match.Length >= m.end));
+
+                if (!isOverlapped)
+                {
+                    matches.Add((match.Index, match.Index + match.Length, match.Value));
+                }
+            }
+        }
+
+        // Sort matches by position (reverse order so we can insert from right to left)
+        matches = matches.OrderByDescending(m => m.start).ToList();
+
+        // Apply underlines to the original text by mapping clean positions to original positions
+        string result = entryText;
+        foreach (var match in matches)
+        {
+            // Find the corresponding position in the original text
+            int originalStart = FindOriginalPosition(entryText, match.start);
+            int originalEnd = FindOriginalPosition(entryText, match.end);
+
+            if (originalStart != -1 && originalEnd != -1)
+            {
+                // Extract the actual text from the original (including any tags)
+                string originalMatchText = result.Substring(originalStart, originalEnd - originalStart);
+
+                // Don't underline if it's already underlined
+                if (!originalMatchText.Contains("<u>") && !originalMatchText.Contains("</u>"))
+                {
+                    // Add underline tags inside the existing HTML structure
+                    string underlinedText = AddUnderlineInsideTags(originalMatchText);
+                    result = result.Substring(0, originalStart) + underlinedText + result.Substring(originalEnd);
+                }
+            }
+        }
+
+        return result;
     }
 
+    private static string AddUnderlineInsideTags(string text)
+    {
+        // Find all text content (not inside tags) and wrap it with <u> tags
+        return Regex.Replace(text, @"(?<=>|^)([^<]+)(?=<|$)", match =>
+        {
+            return $"<u>{match.Groups[1].Value}</u>";
+        });
+    }
+
+    private static int FindOriginalPosition(string originalText, int cleanPosition)
+    {
+        int cleanIndex = 0;
+        int originalIndex = 0;
+        bool inTag = false;
+
+        while (originalIndex < originalText.Length && cleanIndex < cleanPosition)
+        {
+            if (originalText[originalIndex] == '<')
+            {
+                inTag = true;
+            }
+            else if (originalText[originalIndex] == '>')
+            {
+                inTag = false;
+                originalIndex++;
+                continue;
+            }
+
+            if (!inTag)
+            {
+                cleanIndex++;
+            }
+
+            originalIndex++;
+        }
+
+        return originalIndex;
+    }
     public static string RemoveTags(string output)
     {
         output = output.Replace("<ignore>", "");
